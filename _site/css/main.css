@@ -1,0 +1,163 @@
+header {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); }
+  header nav {
+    float: right;
+    margin-top: 60px;
+    margin-right: 80px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    word-spacing: 30px; }
+    header nav a {
+      text-decoration: none;
+      color: #f1f1f1; }
+  header h1, header h3 {
+    color: #f1f1f1;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    clear: both; }
+  header h1 {
+    font-size: 15vw;
+    padding-top: 5%;
+    margin: 0;
+    letter-spacing: 20px; }
+  header h3 {
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 4px; }
+
+section {
+  font-family: "Dosis", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  section h1 {
+    letter-spacing: 9px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300; }
+  section nav {
+    word-spacing: 100px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px; }
+    section nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: 400;
+      letter-spacing: 5px; }
+  section .gallery-container {
+    width: 70%;
+    margin: 60px auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    section .gallery-container div {
+      height: 300px;
+      min-width: 300px;
+      background: #ccc;
+      margin: 20px; }
+  section .more {
+    border: 2px solid black;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 12px;
+    box-sizing: border-box;
+    font-weight: bold; }
+
+.projects {
+  padding: 50px; }
+  .projects h1 {
+    color: #f1f1f1; }
+  .projects .projects-container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto 30px; }
+    .projects .projects-container div {
+      background-color: #ccc;
+      height: 300px;
+      min-width: 300px;
+      margin: 50px; }
+
+.blog .posts-nav {
+  width: 60%;
+  margin: 50px auto 0; }
+  .blog .posts-nav span {
+    letter-spacing: 7px;
+    font-size: 20px;
+    margin-left: 10px; }
+  .blog .posts-nav span:nth-child(2) {
+    letter-spacing: 3px;
+    margin-left: -10px;
+    margin-top: 5px;
+    font-size: 15px;
+    float: right;
+    color: #747474; }
+.blog .blog-container {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px auto 0; }
+  @media (max-width: 1017px) {
+    .blog .blog-container {
+      justify-content: center; } }
+  .blog .blog-container .post-container {
+    width: 300px;
+    height: 625px;
+    margin: 10px; }
+    .blog .blog-container .post-container .post .post-img {
+      height: 250px;
+      background: #ccc; }
+    .blog .blog-container .post-container .post .post-content {
+      height: 450px; }
+      .blog .blog-container .post-container .post .post-content .blog-title {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+        font-weight: bold; }
+      .blog .blog-container .post-container .post .post-content .date {
+        color: #2e2e2e;
+        font-size: 12px; }
+      .blog .blog-container .post-container .post .post-content p {
+        margin: 10px 0;
+        height: 180px;
+        font-size: 18px; }
+      .blog .blog-container .post-container .post .post-content .more {
+        margin: 0;
+        width: 200px; }
+
+.about h1 {
+  color: #f1f1f1; }
+.about .about-container {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .about .about-container div {
+    margin: 50px; }
+  .about .about-container .about-content {
+    color: #f1f1f1;
+    height: 400px;
+    width: 400px;
+    box-sizing: border-box;
+    font-size: 20px; }
+  .about .about-container .about-image {
+    background: #ccc;
+    height: 400px;
+    width: 400px; }
+
+.social-media-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center; }
+  .social-media-container .logo {
+    margin: 0 20px;
+    width: 50px;
+    height: 50px; }
