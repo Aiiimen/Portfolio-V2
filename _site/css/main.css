@@ -47,7 +47,7 @@ section {
       font-weight: 400;
       letter-spacing: 5px; }
   section .gallery-container {
-    width: 70%;
+    width: 90%;
     margin: 60px auto 30px;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,7 @@ section {
   .projects h1 {
     color: #f1f1f1; }
   .projects .projects-container {
-    width: 60%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -98,10 +98,10 @@ section {
     float: right;
     color: #747474; }
 .blog .blog-container {
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 30px auto 0; }
   @media (max-width: 1017px) {
     .blog .blog-container {
@@ -109,7 +109,7 @@ section {
   .blog .blog-container .post-container {
     width: 300px;
     height: 625px;
-    margin: 10px; }
+    margin: 20px; }
     .blog .blog-container .post-container .post .post-img {
       height: 250px;
       background: #ccc; }
@@ -136,7 +136,7 @@ section {
   color: #f1f1f1; }
 .about .about-container {
   margin: 0 auto;
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
