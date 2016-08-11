@@ -1,6 +1,13 @@
 $(document).ready(function(){
   smoothScrool(1000);
 
+  //more button shake
+  setInterval(function(){
+  $('.gallery .more').velocity('callout.shake');
+  }, 10000);
+
+
+
   //SLIDING ANIMATION WHEN SCROLLING
   var notFiredGallery = false;
   var notFiredProjects = false;
@@ -34,6 +41,8 @@ $(document).ready(function(){
   });
   // END OF SLIDING ANIMATION
 
+
+  //insert next function here
 });
 
 
