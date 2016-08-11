@@ -47,7 +47,7 @@ section {
       font-weight: 400;
       letter-spacing: 5px; }
   section .gallery-container {
-    width: 90%;
+    max-width: 1200px;
     margin: 60px auto 30px;
     display: flex;
     flex-wrap: wrap;
