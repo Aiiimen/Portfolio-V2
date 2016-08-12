@@ -55,7 +55,7 @@ section {
     font-size: 18px;
     position: relative; }
     section nav a {
-      margin-left: 100px;
+      margin-right: 100px;
       cursor: pointer; }
     section nav .active {
       text-decoration: underline; }
@@ -191,3 +191,34 @@ section {
     margin: 0 20px;
     width: 50px;
     height: 50px; }
+
+body {
+  font-family: "Dosis", sans-serif; }
+
+.title {
+  letter-spacing: 9px;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  word-spacing: -20px; }
+  .title span {
+    font-size: 20px;
+    letter-spacing: 0; }
+
+.more-nav {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 18px; }
+  .more-nav a {
+    margin-right: 100px; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .container #img {
+    height: 50%;
+    width: 48%;
+    margin: 10px;
+    background-color: #ccc; }
