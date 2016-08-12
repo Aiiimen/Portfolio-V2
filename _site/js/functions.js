@@ -1,6 +1,6 @@
 $(document).ready(function(){
   smoothScrool(1000);
-
+  galleryScroll();
   //more button shake
   setInterval(function(){
   $('.gallery .more').velocity('callout.shake');
@@ -17,7 +17,7 @@ $(document).ready(function(){
     var scroll = $(this).scrollTop();
     switch (scroll != 0 ){
         case (scroll > $('.gallery-container').offset().top -
-          ($('#gallery').height() / 1.7) && !notFiredGallery):
+          ($('#gallery').height() / 0.1) && !notFiredGallery):
           slideRightIn('.gallery-container', '.img');
           notFiredGallery = true;
         break;
@@ -77,4 +77,30 @@ function smoothScrool (duration){
       }, duration)
     }
   });
+}
+
+//gallery scroll
+function galleryScroll(){
+
+$('nav a').click(function(){
+
+  if( $(this).hasClass('street')){
+    $('nav a').removeClass('active');
+    $('.street').addClass('active');
+    $('.belt').animate({"left": "-100%"}, 700);
+  }else if ($(this).hasClass('fineart')) {
+    $('nav a').removeClass('active');
+    $('.fineart').addClass('active');
+    $('.belt').animate({"left": "-200%"}, 700);
+  }else if ($(this).hasClass('other')) {
+    $('nav a').removeClass('active');
+    $('.other').addClass('active');
+    $('.belt').animate({"left": "-300%"}, 700);
+  }else if ($(this).hasClass('events')){
+    $('nav a').removeClass('active');
+    $('.events').addClass('active');
+    $('.belt').animate({"left": "0%"}, 700);
+  }
+
+});
 }
