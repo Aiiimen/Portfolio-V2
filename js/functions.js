@@ -41,9 +41,6 @@ $(document).ready(function(){
       }
   });
   // END OF SLIDING ANIMATION
-
-
-  //insert next function here
 });
 
 
@@ -52,8 +49,8 @@ $(document).ready(function(){
 function slideLeftIn (main_container, child1, child2){
     $(main_container).removeClass('hidden');
     $(child1, child2)
-    .velocity("transition.slideLeftIn", {stagger: 250})
-    .delay(750);
+    .velocity("transition.slideLeftIn", {stagger: 50})
+    .delay(200);
 }
 
 
@@ -62,8 +59,8 @@ function slideLeftIn (main_container, child1, child2){
 function slideRightIn (main_container, child){
     $(main_container).removeClass('hidden');
     $(child)
-    .velocity("transition.slideRightIn", {stagger: 250})
-    .delay(750);
+    .velocity("transition.slideRightIn", {stagger: 50})
+    .delay(200);
 }
 
 
