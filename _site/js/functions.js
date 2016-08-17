@@ -5,6 +5,7 @@ $(document).ready(function(){
   setInterval(function(){
   $('.gallery .more').velocity('callout.shake');
   }, 10000);
+  galleryToggle();
 
 
 
@@ -40,9 +41,6 @@ $(document).ready(function(){
       }
   });
   // END OF SLIDING ANIMATION
-
-
-  //insert next function here
 });
 
 
@@ -51,8 +49,8 @@ $(document).ready(function(){
 function slideLeftIn (main_container, child1, child2){
     $(main_container).removeClass('hidden');
     $(child1, child2)
-    .velocity("transition.slideLeftIn", {stagger: 250})
-    .delay(750);
+    .velocity("transition.slideLeftIn", {stagger: 50})
+    .delay(200);
 }
 
 
@@ -61,8 +59,8 @@ function slideLeftIn (main_container, child1, child2){
 function slideRightIn (main_container, child){
     $(main_container).removeClass('hidden');
     $(child)
-    .velocity("transition.slideRightIn", {stagger: 250})
-    .delay(750);
+    .velocity("transition.slideRightIn", {stagger: 50})
+    .delay(200);
 }
 
 
@@ -85,22 +83,37 @@ function galleryScroll(){
 $('nav a').click(function(){
 
   if( $(this).hasClass('street')){
+    $('.notShowing').hide("fast");
     $('nav a').removeClass('active');
     $('.street').addClass('active');
     $('.belt').animate({"left": "-100%"}, 700);
   }else if ($(this).hasClass('fineart')) {
+    $('.notShowing').hide("fast");
     $('nav a').removeClass('active');
     $('.fineart').addClass('active');
     $('.belt').animate({"left": "-200%"}, 700);
   }else if ($(this).hasClass('other')) {
+    $('.notShowing').hide("fast");
     $('nav a').removeClass('active');
     $('.other').addClass('active');
     $('.belt').animate({"left": "-300%"}, 700);
   }else if ($(this).hasClass('events')){
+    $('.notShowing').hide("fast");
     $('nav a').removeClass('active');
     $('.events').addClass('active');
     $('.belt').animate({"left": "0%"}, 700);
   }
 
+});
+}
+
+//expand gallery
+function galleryToggle() {
+$('.notShowing').hide();
+$('.expandless').hide();
+$('#more-gallery img').click(function(){
+  $('.notShowing').slideToggle("slow");
+  $('.expandless').toggle("fast");
+  $('.expandmore').toggle("fast");
 });
 }
