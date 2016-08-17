@@ -170,6 +170,9 @@ section {
         .blog .blog-container .post-container .post .post-content .more {
           margin: 0;
           width: 200px; }
+          .blog .blog-container .post-container .post .post-content .more a {
+            text-decoration: none;
+            color: black; }
 
 .about h1 {
   color: #f1f1f1; }

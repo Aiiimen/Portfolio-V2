@@ -1,0 +1,36 @@
+---
+
+---
+<html>
+
+<head>
+<title> {{  page.title }} </title>
+<link href="https://fonts.googleapis.com/css?family=Dosis:300,400" rel="stylesheet">
+<style>
+
+body{
+  font-family: 'Dosis';
+  text-align: center;
+}
+.content{
+  width: 70%;
+  margin: 0 auto;
+}
+p{
+
+  font-size: 20px;
+}
+
+
+</style>
+</head>
+
+<body >
+<h1 > {{page.title}} </h1>
+<img src="{{ page.image }}" />
+
+<div class="content">
+  <p> {{ content }} </p>
+</div>
+</body>
+</html>
