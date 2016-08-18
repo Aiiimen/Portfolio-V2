@@ -6,7 +6,7 @@ $(document).ready(function(){
   $('.gallery .more').velocity('callout.shake');
   }, 10000);
   galleryToggle();
-
+  blogScroll();
 });
 
 
@@ -52,6 +52,21 @@ $('nav a').click(function(){
   }
 
 });
+}
+
+function blogScroll(){
+  $('.full-content-wrap').hide();
+
+  $('.allposts').click(function(){
+    $('.blog-belt').animate({"left":"-100%"}, 700);
+    $('.full-content-wrap').show("slow");
+    
+  });
+  $('.return').click(function(){
+    $('.blog-belt').animate({"left":"0%"}, 700);
+    $('.full-content-wrap').hide("slow");
+
+  });
 }
 
 //expand gallery

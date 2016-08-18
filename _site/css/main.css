@@ -25,6 +25,8 @@ header {
       text-align: center;
       letter-spacing: 9px;
       font-weight: lighter; }
+    header .typo h1:nth-child(2) {
+      font-size: 50px; }
     header .typo img {
       width: 200px;
       margin: 0 auto; }
@@ -121,58 +123,101 @@ section {
       margin: 50px; }
 
 .blog {
+  position: relative;
   overflow: hidden; }
-  .blog .posts-nav {
-    width: 60%;
-    margin: 50px auto 0; }
-    .blog .posts-nav span {
-      letter-spacing: 7px;
-      font-size: 20px;
-      margin-left: 80px; }
-    .blog .posts-nav span:nth-child(2) {
-      letter-spacing: 3px;
-      margin-right: 80px;
-      margin-top: 5px;
-      font-size: 15px;
-      float: right;
-      color: #747474; }
-  .blog .blog-container {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px auto 0; }
-    @media (max-width: 1017px) {
-      .blog .blog-container {
-        justify-content: center; } }
-    .blog .blog-container .post-container {
-      width: 300px;
-      height: 625px;
-      margin: 20px; }
-      .blog .blog-container .post-container .post .post-img {
-        height: 250px;
-        background: #ccc; }
-      .blog .blog-container .post-container .post .post-content {
-        height: 450px; }
-        .blog .blog-container .post-container .post .post-content .blog-title {
-          margin: 0;
+  .blog .blog-belt {
+    width: 200%;
+    position: relative;
+    left: 0%; }
+    .blog .blog-belt .latest-posts-wrap, .blog .blog-belt .full-content-wrap {
+      width: 50%;
+      float: left;
+      overflow-y: hidden; }
+      .blog .blog-belt .latest-posts-wrap .posts-nav, .blog .blog-belt .full-content-wrap .posts-nav {
+        width: 60%;
+        margin: 50px auto 0; }
+        .blog .blog-belt .latest-posts-wrap .posts-nav span, .blog .blog-belt .full-content-wrap .posts-nav span {
+          letter-spacing: 7px;
           font-size: 20px;
+          margin-left: 80px; }
+        .blog .blog-belt .latest-posts-wrap .posts-nav span:nth-child(2), .blog .blog-belt .full-content-wrap .posts-nav span:nth-child(2) {
           letter-spacing: 3px;
-          text-align: left;
-          font-weight: bold; }
-        .blog .blog-container .post-container .post .post-content .date {
-          color: #2e2e2e;
-          font-size: 12px; }
-        .blog .blog-container .post-container .post .post-content p {
-          margin: 10px 0;
-          height: 180px;
-          font-size: 18px; }
-        .blog .blog-container .post-container .post .post-content .more {
-          margin: 0;
-          width: 200px; }
-          .blog .blog-container .post-container .post .post-content .more a {
-            text-decoration: none;
-            color: black; }
+          margin-right: 80px;
+          margin-top: 5px;
+          font-size: 15px;
+          float: right;
+          color: #747474; }
+      .blog .blog-belt .latest-posts-wrap .blog-container, .blog .blog-belt .full-content-wrap .blog-container {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px auto 0; }
+        @media (max-width: 1017px) {
+          .blog .blog-belt .latest-posts-wrap .blog-container, .blog .blog-belt .full-content-wrap .blog-container {
+            justify-content: center; } }
+        .blog .blog-belt .latest-posts-wrap .blog-container .post-container, .blog .blog-belt .full-content-wrap .blog-container .post-container {
+          width: 300px;
+          height: auto;
+          margin: 20px; }
+          .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-img, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-img {
+            height: 250px;
+            background: #ccc; }
+          .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content {
+            height: auto; }
+            .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content .blog-title, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content .blog-title {
+              margin: 0;
+              font-size: 20px;
+              letter-spacing: 3px;
+              text-align: left;
+              font-weight: bold; }
+            .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content .date, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content .date {
+              color: #2e2e2e;
+              font-size: 12px; }
+            .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content p, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content p {
+              margin: 10px 0 10px;
+              height: auto;
+              font-size: 18px; }
+            .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content .more, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content .more {
+              margin: 0;
+              width: 200px; }
+              .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content .more a, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content .more a {
+                text-decoration: none;
+                color: black; }
+      .blog .blog-belt .latest-posts-wrap .blog-content-wrap, .blog .blog-belt .full-content-wrap .blog-content-wrap {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap; }
+        .blog .blog-belt .latest-posts-wrap .blog-content-wrap .return, .blog .blog-belt .full-content-wrap .blog-content-wrap .return {
+          width: 100%; }
+          .blog .blog-belt .latest-posts-wrap .blog-content-wrap .return img, .blog .blog-belt .full-content-wrap .blog-content-wrap .return img {
+            display: block;
+            width: 50px;
+            height: 50px; }
+      .blog .blog-belt .latest-posts-wrap .post-list, .blog .blog-belt .full-content-wrap .post-list {
+        width: 45%;
+        height: auto;
+        position: relative;
+        margin: 10px;
+        border-bottom: 1px solid black;
+        padding: 5px; }
+        .blog .blog-belt .latest-posts-wrap .post-list .post-thumb, .blog .blog-belt .full-content-wrap .post-list .post-thumb {
+          float: left;
+          margin-right: 10px; }
+          .blog .blog-belt .latest-posts-wrap .post-list .post-thumb img, .blog .blog-belt .full-content-wrap .post-list .post-thumb img {
+            width: 200px; }
+        .blog .blog-belt .latest-posts-wrap .post-list .post-info h2, .blog .blog-belt .latest-posts-wrap .post-list .post-info h4, .blog .blog-belt .latest-posts-wrap .post-list .post-info p, .blog .blog-belt .full-content-wrap .post-list .post-info h2, .blog .blog-belt .full-content-wrap .post-list .post-info h4, .blog .blog-belt .full-content-wrap .post-list .post-info p {
+          margin: 0; }
+        .blog .blog-belt .latest-posts-wrap .post-list .post-info a, .blog .blog-belt .full-content-wrap .post-list .post-info a {
+          color: black; }
+        .blog .blog-belt .latest-posts-wrap .post-list .post-info h4, .blog .blog-belt .full-content-wrap .post-list .post-info h4 {
+          font-size: 15px;
+          font-style: italic;
+          font-weight: 300; }
+        .blog .blog-belt .latest-posts-wrap .post-list .post-info p, .blog .blog-belt .full-content-wrap .post-list .post-info p {
+          margin-top: 5px;
+          font-size: 20px; }
 
 .about h1 {
   color: #f1f1f1; }
