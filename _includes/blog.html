@@ -1,66 +1,62 @@
 
 <section class="blog" id="blog">
-  <h1> Blog </h1>
 
-  <div class="posts-nav">
-    <span>LATEST POSTS</span>   <span>ALL POSTS</span>
-  </div>
+  <div class="blog-belt">
+    <div class="latest-posts-wrap">
+      <h1> Blog </h1>
 
-
-  <div class="blog-container">
-    {% for post in site.posts limit: 3 %}
-    <div class="post-container">
-
-      <div class="post">
-        <div class="post-img"><img src= {{ post.image }} > </div>
-        <div class="post-content">
-
-          <h1 class="blog-title">{{ post.title }}</h1>
-          <span class="date"> {{ post.date | date: "%d-%m-%Y" }} </span>
-          <p>{{ post.description }}</p>
-
-
-          <div class="more"><a href="{{ post.url }}"> READ MORE</a></div>
-        </div>
+      <div class="posts-nav">
+        <span>LATEST POSTS</span>   <span class="allposts">ALL POSTS</span>
       </div>
 
-    </div>
-    {% endfor %}
-    <!-- <div class="post-container">
 
-      <div class="post">
-        <div class="post-img">img</div>
-        <div class="post-content">
+      <div class="blog-container">
+        {% for post in site.posts limit: 3 %}
+        <div class="post-container">
 
-          <h1 class="blog-title">Vestibulum interdum.</h1>
-          <span class="date"> 01/08/2016 </span>
-          <p>Cras finibus urna sed metus fermentum, eu maximus tortor pellentesque. Proin a nisi urna. In rutrum velit lacinia mauris laoreet, eu volutpat velit hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="post">
+            <div class="post-img"><a href="{{post.url}}"><img src= {{ post.image }} ></a> </div>
+            <div class="post-content">
+
+              <h1 class="blog-title">{{ post.title }}</h1>
+              <span class="date"> {{ post.date | date: "%d-%m-%Y" }} </span>
+              <p>{{ post.description }}</p>
 
 
-          <div class="more">READ MORE</div>
+              <div class="more"><a href="{{ post.url}}"> READ MORE</a></div>
+            </div>
+          </div>
+
         </div>
-      </div>
+        {% endfor %}
 
+      </div>
     </div>
 
-    <div class="post-container">
+    <div class="full-content-wrap">
+        <div class="blog-content-wrap">
+          <div class="return">
+            <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-128.png"/>
+          </div>
 
-      <div class="post">
-        <div class="post-img">img</div>
-        <div class="post-content">
+          {% for post in site.posts %}
+          <div class="post-list">
 
-          <h1 class="blog-title">Phasellus finibus est vel.</h1>
-          <span class="date"> 25/07/2016 </span>
-          <p>Curabitur sit amet euismod urna. Suspendisse interdum venenatis tincidunt. Vivamus condimentum erat et metus varius, quis blandit quam luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <div class="post-thumb">
+              <a href="{{post.url}}"><img src="{{ post.image }}" /></a>
+            </div>
 
+            <div class="post-info">
+              <a href="{{post.url}}"><h2> {{post.title}} </h2> </a>
+              <h4> {{post.date | date: "%d-%m-%Y" }}</h4>
+              <p> {{post.description}} </p>
+            </div>
 
-          <div class="more">READ MORE</div>
+          </div>
+          {% endfor %}
         </div>
-      </div>
 
-    </div> -->
-
+    </div>
   </div>
-
 
 </section>
