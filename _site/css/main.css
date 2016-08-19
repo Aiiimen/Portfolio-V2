@@ -206,14 +206,17 @@ section {
             box-sizing: border-box;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.2); }
-            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h2, .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h4 {
-              margin: 0; }
-            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h2 {
-              font-size: 18px; }
-            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h4 {
-              font-size: 13px;
-              font-weight: 300;
-              font-style: italic; }
+            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a {
+              text-decoration: none; }
+              .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h4 {
+                margin: 0;
+                color: black; }
+              .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h2 {
+                font-size: 18px; }
+              .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h4 {
+                font-size: 13px;
+                font-weight: 300;
+                font-style: italic; }
 
 .about h1 {
   color: #f1f1f1; }
