@@ -1,9 +1,9 @@
 ---
 layout: posts
-title: second posts
+title: second post
 date: 2016-08-15 14:25:22 +0100
 description: Hello, again
-image: "https://dummyimage.com/mediumrectangle/222222/eeeeee"
+image: "http://i.imgur.com/rJpolnr.jpg?1"
 ---
 
 Phasellus vel lectus hendrerit arcu feugiat hendrerit cursus non augue. Donec pharetra quis nunc quis suscipit. Nulla efficitur ex vel aliquet tempor. Fusce lobortis congue odio, ac dignissim felis scelerisque a. Quisque hendrerit, urna in laoreet iaculis, nisi est ultricies lorem, in scelerisque quam lorem ut arcu. Vivamus libero erat, pulvinar eget justo placerat, tempus dignissim lorem. Pellentesque accumsan dolor id metus facilisis, id pellentesque ex sodales. Curabitur interdum tortor non risus finibus, sed blandit enim ultricies. Duis tincidunt dignissim pharetra. Praesent vel quam a sapien malesuada tempor a nec lacus. Ut mauris est, ornare eget vestibulum et, dictum quis nunc. Sed rutrum ex nibh, a convallis eros lacinia a. Sed vehicula mattis lectus eu ultrices. Proin ac enim vitae est maximus blandit. Curabitur rhoncus lacus ut ipsum hendrerit laoreet.

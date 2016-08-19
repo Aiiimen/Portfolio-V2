@@ -7,6 +7,7 @@ $(document).ready(function(){
   }, 10000);
   galleryToggle();
   blogScroll();
+
 });
 
 
@@ -60,7 +61,7 @@ function blogScroll(){
   $('.allposts').click(function(){
     $('.blog-belt').animate({"left":"-100%"}, 700);
     $('.full-content-wrap').show("slow");
-    
+
   });
   $('.return').click(function(){
     $('.blog-belt').animate({"left":"0%"}, 700);

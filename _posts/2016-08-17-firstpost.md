@@ -3,7 +3,7 @@ layout: posts
 title: Up and running!
 date: 2016-08-17 14:25:22 +0100
 description: Aliquam vulputate pharetra risus, at placerat elit. Phasellus sit amet odio euismod, porta erat sed, vulputate mauris. In tincidunt gravida nulla nec sodales.
-image: "https://pngimg.com/upload/beard_PNG6258.png"
+image: "http://i.imgur.com/thmhG2C.jpg?1"
 ---
 
 
