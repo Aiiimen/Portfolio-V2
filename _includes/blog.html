@@ -15,7 +15,7 @@
         <div class="post-container">
 
           <div class="post">
-            <div class="post-img"><a href="{{post.url}}"><img src= {{ post.image }} ></a> </div>
+            <div class="post-img"><a target="_blank" href="{{post.url}}"><img src= {{ post.image }} ></a> </div>
             <div class="post-content">
 
               <h1 class="blog-title">{{ post.title }}</h1>
@@ -23,7 +23,7 @@
               <p>{{ post.description }}</p>
 
 
-              <div class="more"><a href="{{ post.url}}"> READ MORE</a></div>
+              <div class="more"><a target="_blank" href="{{ post.url}}"> READ MORE</a></div>
             </div>
           </div>
 
@@ -42,11 +42,11 @@
 
           {% for post in site.posts %}
           <div class="post-block">
-            <div class="post-block-img">
+            <a target="_blank" href="{{post.url}}"><div class="post-block-img">
               <img src="{{ post.image}}" />
-            </div>
+            </div></a>
             <div class="post-block-text">
-              <h2> {{post.title}} </h2>
+              <a target="_blank" href="{{post.url}}"><h2> {{post.title}} </h2> </a>
               <h4> {{post.date | date: "%d-%m-%Y"}} </h4>
             </div>
           </div>
