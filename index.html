@@ -37,7 +37,17 @@
 
 
 <script src="js/lightbox.js"></script>
+<script src ="js/masonry.js"></script>
 
+
+<script>
+  $('.blog-content-wrap').masonry({
+
+    itemSelector: '.post-block',
+    columnWidth: 200,
+    isFitWidth: true
+  });
+</script>
 <script>
     lightbox.option({
       'disableScrolling' : true

@@ -34,28 +34,25 @@
     </div>
 
     <div class="full-content-wrap">
-        <div class="blog-content-wrap">
-          <div class="return">
-            <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-128.png"/>
-          </div>
-
-          {% for post in site.posts %}
-          <div class="post-list">
-
-            <div class="post-thumb">
-              <a href="{{post.url}}"><img src="{{ post.image }}" /></a>
-            </div>
-
-            <div class="post-info">
-              <a href="{{post.url}}"><h2> {{post.title}} </h2> </a>
-              <h4> {{post.date | date: "%d-%m-%Y" }}</h4>
-              <p> {{post.description}} </p>
-            </div>
-
-          </div>
-          {% endfor %}
+        <div class="return">
+          <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-128.png"/>
         </div>
 
+        <div class="blog-content-wrap">
+
+          {% for post in site.posts %}
+          <div class="post-block">
+            <div class="post-block-img">
+              <img src="{{ post.image}}" />
+            </div>
+            <div class="post-block-text">
+              <h2> {{post.title}} </h2>
+              <h4> {{post.date | date: "%d-%m-%Y"}} </h4>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
     </div>
   </div>
 
