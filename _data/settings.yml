@@ -1,0 +1,5 @@
+# Project section
+projects:
+- {name: Capture Your 365, folder: 'proj-1'}
+- {name: Designs, folder: 'proj-2'}
+- {name: The Invisible Man, folder: 'proj-3'}
