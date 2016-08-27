@@ -57,14 +57,23 @@ $('nav a').click(function(){
 });
 }
 
+//blog scroll
 function blogScroll(){
-  $('.full-content-wrap').hide();
 
+  $('.blog-content-wrap').imagesLoaded(function(){
+    $('.blog-content-wrap').masonry({
+      itemSelector: '.post-block',
+      columnWidth: 200,
+      isFitWidth: true,
+    });
+    $('.full-content-wrap').hide();
+  });
+  // $('.full-content-wrap').hide();
   $('.allposts').click(function(){
     $('.blog-belt').animate({"left":"-100%"}, 700);
     $('.full-content-wrap').show("slow");
-
   });
+
   $('.return').click(function(){
     $('.blog-belt').animate({"left":"0%"}, 700);
     $('.full-content-wrap').hide("slow");
