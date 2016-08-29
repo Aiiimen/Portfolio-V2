@@ -1,19 +1,42 @@
 .projects
-  padding: 50px
+
   h1
-    
+
     color: #f1f1f1
-    
-  .projects-container
-    width: 90%
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
-    margin: 50px auto 30px
-    
-    div
-      background-color: #ccc
-      height: 300px
-      min-width: 300px
-      margin: 50px
-      
+  .project-belt
+    width: 200%
+    left: 0
+    position: relative
+
+    .projects-container, .project-load
+      width: 50%
+      float: left
+
+
+    .projects-thumb
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      margin: 50px auto 30px
+
+      div
+        background-color: #ccc
+        height: 300px
+        min-width: 300px
+        margin: 20px
+        cursor: pointer
+
+    .project-load
+      .return-proj
+        display: block
+        margin: 0 auto
+        cursor: pointer
+      .project-content
+        width: 90%
+        margin: 0 auto
+        text-align: center
+        color: white
+
+
+        .design
+          width: 70%

@@ -131,21 +131,37 @@ section {
 @media (max-width: 640px) {
   .gallery nav {
     word-spacing: 30px; } }
-.projects {
-  padding: 50px; }
-  .projects h1 {
-    color: #f1f1f1; }
-  .projects .projects-container {
-    width: 90%;
+.projects h1 {
+  color: #f1f1f1; }
+.projects .project-belt {
+  width: 200%;
+  left: 0;
+  position: relative; }
+  .projects .project-belt .projects-container, .projects .project-belt .project-load {
+    width: 50%;
+    float: left; }
+  .projects .project-belt .projects-thumb {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px auto 30px; }
-    .projects .projects-container div {
+    .projects .project-belt .projects-thumb div {
       background-color: #ccc;
       height: 300px;
       min-width: 300px;
-      margin: 50px; }
+      margin: 20px;
+      cursor: pointer; }
+  .projects .project-belt .project-load .return-proj {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer; }
+  .projects .project-belt .project-load .project-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+    .projects .project-belt .project-load .project-content .design {
+      width: 70%; }
 
 .blog {
   position: relative;
@@ -153,7 +169,7 @@ section {
   .blog .blog-belt {
     width: 200%;
     position: relative;
-    left: 0%; }
+    left: 0; }
     .blog .blog-belt .latest-posts-wrap, .blog .blog-belt .full-content-wrap {
       width: 50%;
       float: left;
@@ -171,7 +187,8 @@ section {
           margin-top: 5px;
           font-size: 15px;
           float: right;
-          color: #747474; }
+          color: #747474;
+          cursor: pointer; }
       .blog .blog-belt .latest-posts-wrap .blog-container, .blog .blog-belt .full-content-wrap .blog-container {
         width: 90%;
         display: flex;
@@ -214,14 +231,15 @@ section {
               .blog .blog-belt .latest-posts-wrap .blog-container .post-container .post .post-content .more a, .blog .blog-belt .full-content-wrap .blog-container .post-container .post .post-content .more a {
                 text-decoration: none;
                 color: black; }
-      .blog .blog-belt .latest-posts-wrap .return img, .blog .blog-belt .full-content-wrap .return img {
-        opacity: 0.7;
-        width: 50px;
-        height: 50px; }
+      .blog .blog-belt .latest-posts-wrap .return, .blog .blog-belt .full-content-wrap .return {
+        text-align: center; }
+        .blog .blog-belt .latest-posts-wrap .return img, .blog .blog-belt .full-content-wrap .return img {
+          cursor: pointer; }
       .blog .blog-belt .latest-posts-wrap .blog-content-wrap, .blog .blog-belt .full-content-wrap .blog-content-wrap {
         margin: 0 auto; }
         .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block {
           width: 350px;
+          min-width: 300px;
           float: left;
           margin: 10px; }
           .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text {
@@ -231,18 +249,34 @@ section {
             box-sizing: border-box;
             width: 100%;
             background-color: rgba(255, 255, 255, 0.2); }
+            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h2, .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h4 {
+              margin: 0;
+              color: black; }
             .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a {
               text-decoration: none; }
-              .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h4 {
-                margin: 0;
-                color: black; }
               .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h2, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h2 {
                 font-size: 18px; }
-              .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text a h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text a h4 {
-                font-size: 13px;
-                font-weight: 300;
-                font-style: italic; }
+            .blog .blog-belt .latest-posts-wrap .blog-content-wrap .post-block .post-block-text h4, .blog .blog-belt .full-content-wrap .blog-content-wrap .post-block .post-block-text h4 {
+              font-size: 13px;
+              font-weight: 300;
+              font-style: italic; }
 
+@media (max-width: 640px) {
+  .blog .blog-belt .latest-posts-wrap .posts-nav {
+    margin-left: 40px; }
+
+  .blog .blog-belt .latest-posts-wrap .posts-nav span {
+    margin-left: 0;
+    float: none; }
+
+  .blog .blog-belt .latest-posts-wrap .posts-nav span:nth-child(2) {
+    float: none; }
+
+  .blog .blog-belt .latest-posts-wrap .blog-container, .blog .blog-belt .full-content-wrap .blog-container {
+    margin: 0 auto 0; } }
+@media (max-width: 415px) {
+  .blog .blog-belt .latest-posts-wrap .blog-content-wrap, .blog .blog-belt .full-content-wrap .blog-content-wrap {
+    margin: 0; } }
 .about h1 {
   color: #f1f1f1; }
 .about .about-container {

@@ -6,7 +6,7 @@
       <h1> Blog </h1>
 
       <div class="posts-nav">
-        <span>LATEST POSTS</span>   <span class="allposts">ALL POSTS</span>
+        <span>LATEST POSTS</span>   <span class="allposts">SEE ALL POSTS</span>
       </div>
 
 
@@ -35,11 +35,10 @@
 
     <div class="full-content-wrap">
         <div class="return">
-          <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-128.png"/>
+          <img src="css/img/return-arrow-black.png"/>
         </div>
 
         <div class="blog-content-wrap">
-
           {% for post in site.posts %}
           <div class="post-block">
             <a target="_blank" href="{{ site.baseurl }}{{ post.url }}"><div class="post-block-img">

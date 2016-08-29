@@ -14,6 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js" ></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="js/typing.js"></script>
   <script src="js/functions.js"></script>
 
@@ -270,13 +271,40 @@
 
   <section id="projects" style="background-color: rgba(0, 0, 0, 0.9)" class="projects">
 
-<h1> Projects</h1>
 
-<div class="projects-container ">
-  <div class="project1">pro 1</div>
-  <div class="project2">pro 2</div>
+<div class="project-belt">
+
+
+    <div class="projects-container ">
+      <h1> Projects</h1>
+      <div class="projects-thumb">
+        <!-- <div class="thumb">pro 1</div>
+        <div class="thumb">pro 2</div>
+        <div class="thumb">pro 3</div> -->
+        
+          <div class="thumb" data-folder="proj-1">Capture Your 365</div>
+
+        
+          <div class="thumb" data-folder="proj-2">Designs</div>
+
+        
+          <div class="thumb" data-folder="proj-3">The Invisible Man</div>
+
+        
+      </div>
+    </div>
+
+
+  <div class="project-load">
+    <img class="return-proj" src="css/img/return-arrow-white.png"/>
+    <div class="project-content">
+
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quam mi, pellentesque et est quis, tempor posuere nisi. Nam gravida lacus leo, in aliquam mauris cursus a. In hendrerit orci lorem, mollis rutrum neque tristique id. Quisque non tempus magna. Ut commodo felis augue, non dapibus turpis dictum et. Donec vitae tempus purus. Nullam iaculis magna quis felis mollis vehicula. Vivamus aliquet auctor metus, non blandit neque commodo ac. Aliquam feugiat libero sodales, semper purus vel, bibendum ipsum. Maecenas enim mauris, dapibus quis justo id, volutpat hendrerit nisi.</p>
+      <img class="design" src="css/img/portfolio-green.jpg"/> -->
+    </div>
+  </div>
+
 </div>
-
 </section>
 
 
@@ -288,7 +316,7 @@
       <h1> Blog </h1>
 
       <div class="posts-nav">
-        <span>LATEST POSTS</span>   <span class="allposts">ALL POSTS</span>
+        <span>LATEST POSTS</span>   <span class="allposts">SEE ALL POSTS</span>
       </div>
 
 
@@ -351,11 +379,10 @@
 
     <div class="full-content-wrap">
         <div class="return">
-          <img src="https://cdn0.iconfinder.com/data/icons/typicons-2/24/arrow-back-128.png"/>
+          <img src="css/img/return-arrow-black.png"/>
         </div>
 
         <div class="blog-content-wrap">
-
           
           <div class="post-block">
             <a target="_blank" href="/Portfolio-V2/2016/08/19/more-posts.html"><div class="post-block-img">
@@ -464,15 +491,17 @@
 <script src="js/lightbox.js"></script>
 <script src ="js/masonry.js"></script>
 
+<!-- <script>
 
-<script>
-  $('.blog-content-wrap').masonry({
+    var $grid = $('.blog-content-wrap').imagesLoaded(function(){
+      $grid.masonry({
+        itemSelector: '.post-block',
+        columnWidth: 200,
+        isFitWidth: true,
+      });
+    });
 
-    itemSelector: '.post-block',
-    columnWidth: 200,
-    isFitWidth: true
-  });
-</script>
+    </script> -->
 <script>
     lightbox.option({
       'disableScrolling' : true

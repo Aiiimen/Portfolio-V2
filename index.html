@@ -18,6 +18,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js" ></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="js/typing.js"></script>
   <script src="js/functions.js"></script>
 
@@ -39,15 +40,17 @@
 <script src="js/lightbox.js"></script>
 <script src ="js/masonry.js"></script>
 
+<!-- <script>
 
-<script>
-  $('.blog-content-wrap').masonry({
+    var $grid = $('.blog-content-wrap').imagesLoaded(function(){
+      $grid.masonry({
+        itemSelector: '.post-block',
+        columnWidth: 200,
+        isFitWidth: true,
+      });
+    });
 
-    itemSelector: '.post-block',
-    columnWidth: 200,
-    isFitWidth: true
-  });
-</script>
+    </script> -->
 <script>
     lightbox.option({
       'disableScrolling' : true

@@ -7,9 +7,13 @@ $(document).ready(function(){
   }, 10000);
   galleryToggle();
   blogScroll();
+  //text fit
   $("#contact h1").fitText(1.5, { minFontSize: '10px', maxFontSize: '60px' });
   $(".animated-text").fitText(1.5, { minFontSize: '35px', maxFontSize: '50px' });
   $(".intro-text").fitText(1.5, { minFontSize: '50px', maxFontSize: '80px' });
+
+  projectsScroll();
+  workLoad();
 });
 
 
@@ -57,14 +61,23 @@ $('nav a').click(function(){
 });
 }
 
+//blog scroll
 function blogScroll(){
-  $('.full-content-wrap').hide();
 
+  $('.blog-content-wrap').imagesLoaded(function(){
+    $('.blog-content-wrap').masonry({
+      itemSelector: '.post-block',
+      columnWidth: 200,
+      isFitWidth: true,
+    });
+    $('.full-content-wrap').hide();
+  });
+  // $('.full-content-wrap').hide();
   $('.allposts').click(function(){
     $('.blog-belt').animate({"left":"-100%"}, 700);
     $('.full-content-wrap').show("slow");
-
   });
+
   $('.return').click(function(){
     $('.blog-belt').animate({"left":"0%"}, 700);
     $('.full-content-wrap').hide("slow");
@@ -86,34 +99,53 @@ $('#more-gallery img').click(function(){
 
 //fittext
 (function( $ ){
-
   $.fn.fitText = function( kompressor, options ) {
-
     // Setup options
     var compressor = kompressor || 1,
         settings = $.extend({
           'minFontSize' : Number.NEGATIVE_INFINITY,
           'maxFontSize' : Number.POSITIVE_INFINITY
         }, options);
-
     return this.each(function(){
-
       // Store the object
       var $this = $(this);
-
       // Resizer() resizes items based on the object width divided by the compressor * 10
       var resizer = function () {
         $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
       };
-
       // Call once to set.
       resizer();
-
       // Call on resize. Opera debounces their resize by default.
       $(window).on('resize.fittext orientationchange.fittext', resizer);
-
     });
-
   };
-
 })( jQuery );
+
+
+function projectsScroll() {
+
+  $('.project-load').hide();
+  $('div[class^="thumb"]').click(function(){
+    $('.project-belt').animate({'left': '-100%'}, 700);
+    $('.project-load').show(700);
+  });
+
+  $('.return-proj').click(function(){
+    $('.project-belt').animate({'left': '0'}, 700);
+    $('.project-load').hide(700);
+});
+}
+
+function workLoad(){
+  $.ajaxSetup({ cache: true });
+
+
+  $('.thumb').click(function(){
+
+    var $this = $(this),
+      newFolder = $this.data('folder'),
+      newHtml = "projects/"+ newFolder +".html";
+    $('.project-content').load(newHtml);
+  });
+
+}

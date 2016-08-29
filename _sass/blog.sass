@@ -5,7 +5,7 @@
   .blog-belt
     width: 200%
     position: relative
-    left: 0%
+    left: 0
 
     .latest-posts-wrap, .full-content-wrap
       width: 50%
@@ -26,6 +26,7 @@
           font-size: 15px
           float: right
           color: rgb(116, 116, 116)
+          cursor: pointer
 
       .blog-container
         width: 90%
@@ -77,19 +78,18 @@
                   color: black
 
       .return
+        text-align: center
         img
-          opacity: 0.7
-          width: 50px
-          height: 50px
+          cursor: pointer
+
       .blog-content-wrap
         margin: 0 auto
 
-
         .post-block
           width: 350px
+          min-width: 300px
           float: left
           margin: 10px
-
 
           .post-block-text
             position: absolute
@@ -98,16 +98,31 @@
             box-sizing: border-box
             width: 100%
             background-color: fade-out(white, 0.8)
+            h2, h4
+              margin: 0
+              color: black
             a
               text-decoration: none
-              h2, h4
-                margin: 0
-                color: black
-
               h2
                 font-size: 18px
-                
-              h4
-                font-size: 13px
-                font-weight: 300
-                font-style: italic
+            h4
+              font-size: 13px
+              font-weight: 300
+              font-style: italic
+
+//media query for blog front page (see all posts and latest posts)
+@media (max-width: 640px)
+  .blog .blog-belt .latest-posts-wrap .posts-nav
+    margin-left: 40px
+  .blog .blog-belt .latest-posts-wrap .posts-nav span
+    margin-left: 0
+    float: none
+  .blog .blog-belt .latest-posts-wrap .posts-nav span:nth-child(2)
+    float: none
+  .blog .blog-belt .latest-posts-wrap .blog-container, .blog .blog-belt .full-content-wrap .blog-container
+    margin: 0 auto 0
+
+//media query for masonry
+@media (max-width: 415px)
+  .blog .blog-belt .latest-posts-wrap .blog-content-wrap, .blog .blog-belt .full-content-wrap .blog-content-wrap
+    margin: 0
