@@ -95,11 +95,16 @@ section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center; }
-      .belt .gallery-container-wrap .gallery-container div, .belt .category-container-wrap .gallery-container div {
+      .belt .gallery-container-wrap .gallery-container .img, .belt .category-container-wrap .gallery-container .img {
         height: 300px;
         min-width: 300px;
         background: #ccc;
-        margin: 20px; }
+        margin: 20px;
+        display: flex; }
+        .belt .gallery-container-wrap .gallery-container .img a img, .belt .category-container-wrap .gallery-container .img a img {
+          height: 300px;
+          width: 300px;
+          object-fit: cover; }
 
 .more {
   display: flex;
