@@ -21,8 +21,9 @@
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
   <script src="js/typing.js"></script>
   <script src="js/functions.js"></script>
-
+  
 <body style="margin: 0">
+
 
   {% include header.html %}
 
@@ -53,7 +54,10 @@
     </script> -->
 <script>
     lightbox.option({
-      'disableScrolling' : true
+      // 'disableScrolling' : true,
+      'fitImagesInViewport': false,
+      'positionFromTop': 10
+
     })
 </script>
 </body>

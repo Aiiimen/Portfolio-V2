@@ -148,22 +148,29 @@ section {
     justify-content: center;
     margin: 50px auto 30px; }
     .projects .project-belt .projects-thumb div {
-      background-color: #ccc;
+      background-image: url(img/projects/proj1-thumb.jpg);
+      filter: gray;
+      -webkit-filter: grayscale(100%);
       height: 300px;
       min-width: 300px;
       margin: 20px;
       cursor: pointer; }
+      .projects .project-belt .projects-thumb div:hover {
+        filter: none;
+        -webkit-filter: none; }
+    .projects .project-belt .projects-thumb div:nth-child(2) {
+      background-image: url(img/projects/proj2-thumb.jpg); }
+    .projects .project-belt .projects-thumb div:nth-child(3) {
+      background-image: url(img/projects/proj3-thumb.jpg); }
   .projects .project-belt .project-load .return-proj {
     display: block;
     margin: 0 auto;
     cursor: pointer; }
   .projects .project-belt .project-load .project-content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     color: white; }
-    .projects .project-belt .project-load .project-content .design {
-      width: 70%; }
 
 .blog {
   position: relative;
@@ -494,3 +501,61 @@ body.lb-disable-scrolling {
       cursor: pointer;
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
       opacity: 1; }
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0); }
+
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ''; }
+
+.loader:after {
+  background: #0dc5c1;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }

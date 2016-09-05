@@ -143,9 +143,10 @@ function workLoad(){
   $('.thumb').click(function(){
 
     var $this = $(this),
+      spinner = '<div class="loader">Loading...</div>';
       newFolder = $this.data('folder'),
       newHtml = "projects/"+ newFolder +".html";
-    $('.project-content').load(newHtml);
+    $('.project-content').html(spinner).load(newHtml);
   });
 
 }
