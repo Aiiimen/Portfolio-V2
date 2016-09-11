@@ -1,12 +1,9 @@
 $(document).ready(function(){
   smoothScrool(1000);
   galleryScroll();
-  //more button shake
-  setInterval(function(){
-  $('.gallery .more').velocity('callout.shake');
-  }, 10000);
   galleryToggle();
   blogScroll();
+
   //text fit
   $("#contact h1").fitText(1.5, { minFontSize: '10px', maxFontSize: '60px' });
   $(".animated-text").fitText(1.5, { minFontSize: '35px', maxFontSize: '50px' });
@@ -63,7 +60,6 @@ $('nav a').click(function(){
 
 //blog scroll
 function blogScroll(){
-
   $('.blog-content-wrap').imagesLoaded(function(){
     $('.blog-content-wrap').masonry({
       itemSelector: '.post-block',
@@ -122,6 +118,7 @@ $('#more-gallery img').click(function(){
 })( jQuery );
 
 
+//project scroll
 function projectsScroll() {
 
   $('.project-load').hide();
@@ -136,6 +133,8 @@ function projectsScroll() {
 });
 }
 
+
+//loads the project content on click
 function workLoad(){
   $.ajaxSetup({ cache: true });
 
