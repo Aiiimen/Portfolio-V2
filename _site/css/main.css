@@ -306,10 +306,14 @@ section {
     box-sizing: border-box;
     font-size: 20px; }
   .about .about-container .about-image {
-    background-color: pink;
     height: 400px;
     width: 400px;
-    min-width: 300px; }
+    min-width: 300px;
+    overflow: hidden; }
+    .about .about-container .about-image img {
+      object-fit: cover;
+      height: 400px;
+      width: 400px; }
 
 #contact h1 {
   font-size: 60px;
@@ -362,8 +366,8 @@ body.lb-disable-scrolling {
   font-weight: normal; }
   .lightbox .lb-image {
     display: block;
-    height: auto;
-    max-width: inherit;
+    max-height: auto;
+    max-width: auto;
     border-radius: 3px; }
   .lightbox a img {
     border: none; }

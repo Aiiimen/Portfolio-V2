@@ -8,7 +8,7 @@ $(document).ready(function(){
   $("#contact h1").fitText(1.5, { minFontSize: '10px', maxFontSize: '60px' });
   $(".animated-text").fitText(1.5, { minFontSize: '35px', maxFontSize: '50px' });
   $(".intro-text").fitText(1.5, { minFontSize: '50px', maxFontSize: '80px' });
-
+  $(".comingsoon").fitText(1.5, { minFontSize: '50px', maxFontSize: '100px' });
   projectsScroll();
   workLoad();
 });
