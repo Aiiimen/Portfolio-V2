@@ -3,6 +3,7 @@ $(document).ready(function(){
   galleryScroll();
   galleryToggle();
   blogScroll();
+  hamburgerMenu();
 
   //text fit
   $("#contact h1").fitText(1.5, { minFontSize: '10px', maxFontSize: '60px' });
@@ -147,5 +148,112 @@ function workLoad(){
       newHtml = "projects/"+ newFolder +".html";
     $('.project-content').html(spinner).load(newHtml);
   });
+
+}
+
+function hamburgerMenu() {
+  $("#hamburger-menu").click(function() {
+     $(this).toggleClass("active");
+
+     // if .active true
+     if ($('#hamburger-menu').hasClass("active")) {
+
+       //run shrink in animation and remove .hidden from menu
+       $('#menu').velocity('transition.shrinkIn');
+
+       $('#menu').removeClass("hidden");
+       $('.content').removeClass("hidden");
+
+       //rest of menu animation
+       $("b:nth-child(1)").velocity({
+         top: "50%"
+       }, {
+         duration: 200,
+         easing: "swing"
+       });
+       $("b:nth-child(3)").velocity({
+           top: "50%"
+         }, {
+           duration: 200,
+           easing: "swing"
+         })
+         .velocity({
+           rotateZ: "90deg"
+         }, {
+           duration: 800,
+           delay: 200,
+           easing: [500, 20]
+         });
+       $('#hamburger-menu').velocity({
+         rotateZ: "135deg"
+       }, {
+         duration: 800,
+         delay: 200,
+         easing: [500, 20]
+       });
+
+       //if .active false
+     } else {
+
+       //run shrink out animation
+       $('#menu').velocity('transition.shrinkOut');
+       //wait 650ms for the animation to finish and add .hidden to hide the menu
+       setTimeout(function() {
+         $('#menu').addClass("hidden");
+         $('.content').addClass("hidden");
+       }, 650);
+
+       //rest of menu animation
+       $('#hamburger-menu').velocity("reverse");
+       $("b:nth-child(3)").velocity({
+           rotateZ: "0deg"
+         }, {
+           duration: 800,
+           easing: [500, 20]
+         })
+         .velocity({
+           top: "100%"
+         }, {
+           duration: 200,
+           easing: "swing"
+         });
+       $("b:nth-child(1)").velocity("reverse", {
+         delay: 800
+       });
+
+     }
+
+   });
+
+   //on menu item click
+   //shrink out + close menu + reset hamburger menu + remove .active
+   $("li a").click(function() {
+     //run shrink out animation
+     $('#menu').velocity('transition.shrinkOut');
+     //wait 650ms for the animation to finish and add .hidden to hide the menu
+     setTimeout(function() {
+       $('#menu').addClass("hidden");
+       $('.content').addClass("hidden");
+     }, 650);
+     //rest of menu animation
+     $('#hamburger-menu').velocity("reverse");
+     $("b:nth-child(3)").velocity({
+         rotateZ: "0deg"
+       }, {
+         duration: 800,
+         easing: [500, 20]
+       })
+       .velocity({
+         top: "100%"
+       }, {
+         duration: 200,
+         easing: "swing"
+       });
+     $("b:nth-child(1)").velocity("reverse", {
+       delay: 800
+     });
+     $("#hamburger-menu").removeClass('active');
+
+   });
 
 }
