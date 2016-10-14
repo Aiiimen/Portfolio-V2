@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: My Dissertation Idea!
-date: 2016-10-14 12:30 +0100
+date: 2016-10-14 16:35 +0100
 description: Blur detection and ways of developing it! 
 image: https://res.cloudinary.com/benfiika/image/upload/v1476443632/Blog/keepcalm.png
 ---
