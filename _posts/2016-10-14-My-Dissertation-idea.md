@@ -7,7 +7,7 @@ image: https://res.cloudinary.com/benfiika/image/upload/v1476443632/Blog/keepcal
 ---
 
 
-With the number of digital images being produced everyday is increasing, image degradation is increasing too. By image degradation, I mean image blur. Either it's out of focus blur or blur between the camera and the subject. Blurry images make up a significant percentage of anyone's picture collection. For that reason including others as well, I've decided to do my dissertation on Blur detection. 
+With the number of digital images being produced everyday increasing, image degradation is increasing too. By image degradation, I mean image blur. Either it's out of focus blur or blur between the camera and the subject. Blurry images make up a significant percentage of anyone's picture collection. For that reason including others as well, I've decided to do my dissertation on Blur detection. 
 
 A piece of software that takes in a collection of images and filters them according to their blurriness. 
 
