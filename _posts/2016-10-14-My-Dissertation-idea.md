@@ -7,7 +7,7 @@ image: https://res.cloudinary.com/benfiika/image/upload/v1476443632/Blog/keepcal
 ---
 
 
-With the number of digital images being produced everyday is increasing, image degradation is increasing too. By image degradation, I mean image blur. Either it's out of focus blur or blur between the camera and the subject. Blurry images make up a significant percentage of anyone's picture collection. For that reason including others as well, I've decided to do my dissertation of Blur detection. 
+With the number of digital images being produced everyday is increasing, image degradation is increasing too. By image degradation, I mean image blur. Either it's out of focus blur or blur between the camera and the subject. Blurry images make up a significant percentage of anyone's picture collection. For that reason including others as well, I've decided to do my dissertation on Blur detection. 
 
 A piece of software that takes in a collection of images and filters them according to their blurriness. 
 
@@ -19,11 +19,11 @@ Now… However, you might be thinking detecting blur is easy. That's what I thou
 
 In this post Im going to mention 3 existing blur detection techniques. The first one and probably the one I'm going to use is called Wavelet Transform. 
 
-Blur detection scheme using Harr Wavelet transform is a direct methods. It can not only detect blurriness but the extent of it. It is based on edge type analysis. The scheme takes advantage of the method in both discriminating different types of edges and recovering sharpness form the blurred version. Its effectiveness will not be affected by the uniform background in images. 
+Blur detection scheme using Harr Wavelet transform is a direct method. It can not only detect blurriness but the extent of it. It is based on edge type analysis. The scheme takes advantage of the method in both discriminating different types of edges and recovering sharpness form the blurred version. Its effectiveness will not be affected by the uniform background in images. 
 
 Second existing technique is called DCT (discrete cosine transform). it uses a new solution to aim at exploiting the available DCT information in MPEG and JPEG compressed video or images while involving a minimal computation load, the technique is based on histograms of non-zero DCT occurrences, computed directly from MPEG or JPEG compressed images. Unlike the Harr Wavelet Transform, DCT provides a percentage in terms on blurriness. 0% would mean the frame is totally blurry and 100% meaning the frame is sharp. 
 
-The last and simplest technique is not a transform. it is a pre-processor, only converting the input images from RGB colours to grey-level luminance values is needed for the tool.
+The last and simplest technique is not a transform. It is a pre-processor, only converting the input images from RGB colours to grey-level luminance values is needed for the tool.
 The steps for this method are:
 1) Input image array as IMn
 2) Check if array is two dimensional or not, if not convert it.
