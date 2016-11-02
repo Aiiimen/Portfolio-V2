@@ -17,6 +17,11 @@ I arrived a couple of hours early and straight away I whipped out the 2 cameras 
 I ended up with 4 hours worth of footage. The editing took me around 3 hours. 
 To conclude, I really enjoyed myself and learnt alot. Next time, if I ever get the chance again I know what to improve on. 
 
-Here is a small clip I posted on my Instagram: https://www.instagram.com/p/BME4G_Hgofl/
+Here is a small clip I posted on my Instagram and some pictures I managed to capture during my break: https://www.instagram.com/p/BME4G_Hgofl/
+
+![RussianParty1](https://res.cloudinary.com/benfiika/image/upload/v1478048233/Blog/Weekend-7.jpg)
+![RussianParty2](https://res.cloudinary.com/benfiika/image/upload/v1478048233/Blog/Weekend-1.jpg)
+![RussianParty3](https://res.cloudinary.com/benfiika/image/upload/v1478048233/Blog/Weekend-9.jpg)
+
 
 Till next time! See ya! 
