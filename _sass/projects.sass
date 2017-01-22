@@ -1,24 +1,23 @@
 .projects
-
   h1
-
     color: #f1f1f1
   .project-belt
     width: 200%
     left: 0
     position: relative
-
     .projects-container, .project-load
       width: 50%
       float: left
-
-
     .projects-thumb
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -ms-flex-wrap: wrap
       flex-wrap: wrap
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       margin: 50px auto 30px
-
       div
         background-image: url(img/projects/proj1-thumb.jpg)
         filter: gray
@@ -30,11 +29,10 @@
         &:hover
           filter: none
           -webkit-filter: none
-      div:nth-child(2)
-        background-image: url(img/projects/proj2-thumb.jpg)
-      div:nth-child(3)
-        background-image: url(img/projects/proj3-thumb.jpg)
-
+        &:nth-child(2)
+          background-image: url(img/projects/proj2-thumb.jpg)
+        &:nth-child(3)
+          background-image: url(img/projects/proj3-thumb.jpg)
     .project-load
       .return-proj
         display: block

@@ -1,32 +1,35 @@
 .about
   h1
     color: #f1f1f1
-
   .about-container
     margin: 0 auto
     width: 90%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
     div
       margin: 50px
-    @media (max-width: 1128px)
-      div
-        margin: 10px
     .about-content
       color: #f1f1f1
-
       width: 400px
       min-width: 300px
       box-sizing: border-box
       font-size: 20px
-
     .about-image
       height: 400px
       width: 400px
       min-width: 300px
       overflow: hidden
       img
+        -o-object-fit: cover
         object-fit: cover
         height: 400px
-        width: 300px
+
+@media (max-width: 1128px)
+  .about .about-container div
+    margin: 10px

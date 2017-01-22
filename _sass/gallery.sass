@@ -1,5 +1,5 @@
 section
-  font-family: 'Dosis', sans-serif
+  font-family: "Dosis", sans-serif
   padding-top: 10px
   padding-bottom: 50px
   overflow-x: hidden
@@ -28,29 +28,37 @@ section
   .gallery-container-wrap, .category-container-wrap
     width: 25%
     float: left
-
-    .gallery-container
-      max-width: 1200px
-      margin: 0 auto
-      display: flex
-      flex-wrap: wrap
-      justify-content: center
-      .img
-        height: 300px
-        min-width: 300px
-        background: #ccc
-        margin: 20px
-        display: flex
-        a
-          img
-            height: 300px
-            width: 300px
-            object-fit: cover
-
-
+  .gallery-container-wrap .gallery-container, .category-container-wrap .gallery-container
+    max-width: 1200px
+    margin: 0 auto
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+  .gallery-container-wrap .gallery-container .img, .category-container-wrap .gallery-container .img
+    height: 300px
+    min-width: 300px
+    background: #ccc
+    margin: 20px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+  .gallery-container-wrap .gallery-container .img a img, .category-container-wrap .gallery-container .img a img
+    height: 300px
+    width: 300px
+    -o-object-fit: cover
+    object-fit: cover
 
 .more
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   border: 2px solid black
   width: 270px
@@ -67,13 +75,11 @@ section
     height: 30px
     cursor: pointer
 
-
 .notShowing
   display: none
 
 .hidden
   visibility: hidden
-
 
 @media (max-width: 640px)
   .gallery nav

@@ -1,22 +1,18 @@
-
 header
   height: 100vh
   background-repeat: repeat 0 0
   background-color: rgba(0, 0, 0, 0.9)
-
-
   .browser-menu
     float: right
     padding-right: 50px
     padding-top: 30px
-    font-family: 'Dosis', sans-serif
+    font-family: "Dosis", sans-serif
     font-weight: 300
     font-size: 20px
     word-spacing: 30px
     a
       text-decoration: none
       color: #f1f1f1
-
   .McButton
     display: none
     position: absolute
@@ -37,7 +33,6 @@ header
         top: 50%
       &:nth-child(3)
         top: 100%
-
   a
     &:link
       text-decoration: none
@@ -48,14 +43,12 @@ header
       color: #dedede
     &:active
       text-decoration: none
-
   .content
-    font-family: 'Dosis', sans-serif
+    font-family: "Dosis", sans-serif
     position: relative
     background-color: rgba(0, 0, 0, 0.6)
     height: 100vh
     width: 100%
-
   #menu
     position: absolute
     list-style-type: none
@@ -64,11 +57,8 @@ header
     li
       padding-bottom: 20px
       font-size: 2em
-
   .hidden
     display: none
-
-
   .typo
     width: 80%
     margin: 0 auto
@@ -81,49 +71,43 @@ header
       text-align: center
       letter-spacing: 9px
       font-weight: lighter
-    h1:nth-child(2)
-      font-size: 50px
-
-    // img
-    //   width: 200px
-    //   margin: 0 auto
-
-
-
-  h1, h3
+      &:nth-child(2)
+        font-size: 50px
+  h1
     color: #f1f1f1
     text-align: center
-    font-family: 'Dosis', sans-serif
+    font-family: "Dosis", sans-serif
     clear: both
-
-
   h3
+    color: #f1f1f1
+    text-align: center
+    font-family: "Dosis", sans-serif
+    clear: both
     font-size: 50px
     font-weight: 300
     letter-spacing: 4px
 
-
 @media (max-width: 640px)
-  #homepage .mobile-menu
-    display: block
-  #homepage .browser-menu
-    display: none
-    float: none
-    text-align: center
-    padding-right: 0
-  #homepage .typo
-    padding-top: 10%
-  #homepage .typo h1
-    font-weight: bold
-
-  #homepage .typo h1:nth-child(2)
-    letter-spacing: 2px
-    font-weight: 300
+  #homepage
+    .mobile-menu
+      display: block
+    .browser-menu
+      display: none
+      float: none
+      text-align: center
+      padding-right: 0
+    .typo
+      padding-top: 10%
+      h1
+        font-weight: bold
+        &:nth-child(2)
+          letter-spacing: 2px
+          font-weight: 300
 
 @media (max-height: 360px)
-
-  #homepage .typo h1
-    margin: 0 0 10px
-  #homepage .typo img
-    width: 100px
-    margin-top: 20px
+  #homepage .typo
+    h1
+      margin: 0 0 10px
+    img
+      width: 100px
+      margin-top: 20px
