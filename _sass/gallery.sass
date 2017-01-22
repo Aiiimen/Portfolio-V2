@@ -31,14 +31,16 @@ section
   .gallery-container-wrap .gallery-container, .category-container-wrap .gallery-container
     max-width: 1200px
     margin: 0 auto
-    display: -webkit-box
+    display: -webkit-flex;
     display: -ms-flexbox
+    -webkit-flex-wrap: wrap;
     display: flex
     -ms-flex-wrap: wrap
     flex-wrap: wrap
     -webkit-box-pack: center
     -ms-flex-pack: center
     justify-content: center
+    -webkit-justify-content: center;
   .gallery-container-wrap .gallery-container .img, .category-container-wrap .gallery-container .img
     height: 300px
     min-width: 300px
