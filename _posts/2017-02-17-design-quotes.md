@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: Design quotes to follow!
-date: 2017-02-17 20:45:00 +0100
+date: 2017-02-17 20:53:00 +0100
 description: Best quotes from "What they didnt teach you in design school"
 image: https://res.cloudinary.com/benfiika/image/upload/v1487363822/Blog/design.png
 ---
