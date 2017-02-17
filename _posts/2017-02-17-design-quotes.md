@@ -30,4 +30,4 @@ I've been reading "What they didn't teach you in design school by Phil Cleaver. 
 "As a designer your creativity should be evident in all that you do, from the environment you live in to the clothes that you wear. you should have a curious mind, enjoy collaborations, and be prepared to take on new challenges. Your visual and social awareness should be demonstrated by the exhibitions you visit, films you watch, books you read, and the prodcuts you choose."
 
 I enjoyed reading the book so much that I decided to design a poster/flyer to hang in my room. 
-![alt text](https://res.cloudinary.com/benfiika/image/upload/v1487364743/Blog/TheWebDesignGame10.png "Design poster")
+![alt text](https://res.cloudinary.com/benfiika/image/upload/v1487364944/Blog/mockup.png "Design poster")
