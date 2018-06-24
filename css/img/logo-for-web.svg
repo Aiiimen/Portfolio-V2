@@ -1,18 +1,14 @@
-<section class="about_section sec">
-  <div class="nav_container nav">
-    <div class="logo_container logo">
-
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<a href="."><svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="500.000000pt" height="216.000000pt" viewBox="0 0 500.000000 216.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.14, written by Peter Selinger 2001-2017
 </metadata>
 <g transform="translate(0.000000,216.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none" id="logo">
+fill="#000000" stroke="none">
 <path d="M1072 2149 c-46 -18 -82 -121 -211 -604 -92 -347 -124 -445 -148
 -463 -37 -28 -216 -125 -442 -239 -246 -125 -288 -155 -260 -189 26 -31 92
 -74 114 -74 13 0 28 7 35 15 6 8 75 48 153 89 78 40 178 94 222 120 43 25 81
@@ -36,45 +32,4 @@ l-70 -24 -6 45 c-3 24 -6 78 -6 120 0 129 -20 353 -36 411 -43 149 -105 211
 <path d="M1612 1670 c-29 -12 -36 -31 -28 -75 7 -35 21 -47 67 -58 35 -9 56
 10 64 55 6 31 3 41 -19 62 -26 27 -46 31 -84 16z"/>
 </g>
-</svg></a>
-
-    </div>
-    <div class="nav_bar_container nav_bar">
-      <p> <a href=".">work</a> </p>
-      <p><a href="about.html">about </a></p>
-    </div>
-  </div>
-</section>
-<section class="about_hero">
-  <div data-aos="fade-up" class="about_intro">
-
-    <h1>“</h1>
-    <h1>Find the story. Know the story, Distill the story. Only then should you
-       make visual decisions on how to tell the story. The best design begins
-        with story.
-    </h1>
-    <h3> - Leland Moschmeyer </h3>
-
-
-
-<!--
-    <p data-aos="fade-up"><strong> Hi, I'm Aimen.</strong> I'm a recent computer
-      science graduate with a huge passion for UI/UX Design. From researching and
-      experimenting, Minimalism is designed around the content. Focus and purpose
-      is key when it comes to making minimalism work.</p>
-    <p data-aos="fade-up">I have studied information technology over 6 years.
-      I started learning the basics of design is my second year of univeristy (2015).
-      I took up the challenge to continue self learn design.</p>
-    <p data-aos="fade-up">The goal is to become a full stack web developer where
-    I can work on a project from start to finish and make contributions through
-    every stage of the development phase.</p>
-    <p data-aos="fade-up">When I'm not designing, I shift my creativity into
-    <a href="https://www.instagram.com/benfiika">photography</a>.</p> -->
-  </div>
-  <div class="about-alert">
-    <p>to be continued...</p>
-  </div>
-
-
-
-</section>
+</svg>
