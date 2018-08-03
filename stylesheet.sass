@@ -1,0 +1,127 @@
+body
+  font-family: 'Montserrat'
+  margin: 0
+  padding: 0
+
+
+  .sidenav
+    height: 100%
+    width: 30%
+    position: fixed
+    z-index: 1
+    top: 0
+    left: 0
+    overflow-x: hidden
+    padding-top: 100px
+    display: flex
+    flex-direction: column
+    padding-left: 5%
+    opacity: 0.25
+    transition: 0.3s
+    transition: all 500ms ease-in-out
+    &:hover
+      opacity: 1
+    h5
+      font-weight: 400 !important
+    .social-media img
+      width: 30px
+    .sidenav-toggle
+      display: none
+      img
+        transition: all 500ms ease-in-out
+
+
+  .main
+    margin-left: 30%
+    margin-right: 20%
+    height: 100%
+    .content-container
+      float: right
+      padding-left: 30%
+      h1
+        padding-top: 55%
+      .projects-container
+        margin-top: 100px
+        margin-bottom: 100px
+        .project
+          height: 400px
+          width: 100%
+          cursor: pointer
+          background-size: cover
+          background-position: center
+          margin-bottom: 50px
+          .project-details
+            display: none
+
+        //project on hover - hide image + show text
+        .project:hover
+          background-image: url()
+
+          // border: 1px solid black
+          .project-details
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+
+        .proj1
+          background-image: url("https://free.lstore.graphics/freebies/white/img/569f2facfc5a0ce422206282/721316/upload-6b0d3de0-023d-11e7-8ff0-6572deb8d098.jpg")
+
+
+        .proj2
+          background-image: url("https://free.lstore.graphics/freebies/white/img/569f2facfc5a0ce422206282/721316/upload-69f453d0-023d-11e7-8ff0-6572deb8d098.jpg")
+
+
+.rotate
+  transform: rotate(540deg)
+.open
+  left: 0 !important
+
+
+@media only screen and (max-width: 1024px)
+  body
+    .main
+      margin-right: 10%
+      .content-container
+        padding-left: 20%
+    .sidenav
+      width: 20%
+      opacity: 1
+
+
+@media only screen and (max-width: 768px)
+  body
+    .main
+      margin-right: 3%
+
+
+@media only screen and (max-width: 414px)
+  body
+    .sidenav-toggle
+      display: block
+
+    .sidenav
+      width: 100%
+      background-color: white
+      padding-top: 40px
+      padding-right: 5%
+      box-sizing: border-box
+      left: -82%
+      .sidenav-toggle
+        display: block
+        float: right
+        img
+          float: right
+      table
+        width: 80%
+
+    .main
+      margin-left: 5%
+      .content-container
+        h1
+          font-size: 19px
+        .projects-container
+          margin-top: 60px
+          .project
+            height: 170px

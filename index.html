@@ -1,16 +1,12 @@
----
-
----
 
 <html>
 
-  <title>{{ site.title }}</title>
+  <title>Aimen</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!--    imports  -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css?family=Halant:300,400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -21,9 +17,55 @@
 
 
 
-<body style="margin: 0">
+<body>
+  <!-- side navigation toggle on mobile view -->
 
-  {% include main.html %}
+
+  <!-- Side navigation -->
+  <div class="sidenav">
+      <div class="sidenav-toggle">
+        <img src="assets/sidenav-toggle.png"/>
+      </div>
+      <h4> Aimen Ben Aissa </h4>
+      <h5> Designer & <br> Font-End Developer </h5>
+      <table style="text-align: left; padding-top: 80px; padding-bottom: 80px;font-size: 14px;">
+        <tr>
+          <th><a style="text-decoration: none; color: inherit;" href="project1.html">MHB - Beauty Salon</a> </th>
+        </tr>
+        <tr>
+          <th><a style="text-decoration: line-through; color: #ccc" href="">Mathison - Machine Learning Software</a> </th>
+        </tr>
+      </table>
+
+      <div class="social-media">
+        <a href="https://www.instagram.com/benfiika/" target="_blank"><img src="assets/insta-icon.png"/></a>
+      </div>
+
+  </div>
+
+  <!-- Page content -->
+  <div class="main">
+    <div class="content-container">
+      <h1> I tell stories using design and bring them to life using code. </h1>
+
+      <div class="projects-container">
+
+        <!--  PROJECT ONE: MHB-->
+        <a href="project1.html"><div  class="project proj1">
+          <div class="project-details">
+            <a href="project1.html" style="text-decoration: underline; color:inherit; font-size: 18px; font-weight: 700;"> MHB </a>
+            <p>A redesign for a beauty Salon based in London.</p>
+          </div>
+        </div></a>
+
+        <!-- <div class="project proj2">
+          <div class="project-details">
+            testing
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
 
 </body>
 
