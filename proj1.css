@@ -126,7 +126,14 @@ body {
       body .sidenav .sidenav-toggle img {
         float: right; }
     body .sidenav table {
-      width: 80%; }
+      width: 80%;
+      margin-bottom: 20px; }
+      body .sidenav table th {
+        padding-bottom: 5px; }
+      body .sidenav table td {
+        padding-bottom: 5px; }
+    body .sidenav .back-to-prof {
+      margin-bottom: 20px; }
   body .main {
     margin-left: 5%; }
     body .main .content-container h1 {
