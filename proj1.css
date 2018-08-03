@@ -127,13 +127,13 @@ body {
         float: right; }
     body .sidenav table {
       width: 80%;
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
       body .sidenav table th {
-        padding-bottom: 5px; }
+        padding-bottom: 2px; }
       body .sidenav table td {
-        padding-bottom: 5px; }
+        padding-bottom: 2px; }
     body .sidenav .back-to-prof {
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
   body .main {
     margin-left: 5%; }
     body .main .content-container h1 {
