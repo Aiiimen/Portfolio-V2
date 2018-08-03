@@ -57,6 +57,10 @@ body
           color: inherit
         .active
           text-decoration: underline !important
+    .sidenav-toggle
+      display: none
+      img
+        transition: all 500ms ease-in-out
 
     .back-to-prof
       display: flex
@@ -98,3 +102,59 @@ body
         padding-top: 20px
         text-decoration: underline
         font-style: italic
+
+
+
+
+.rotate
+  transform: rotate(540deg)
+.open
+  left: 0 !important
+
+
+@media only screen and (max-width: 1024px)
+  body
+    .main
+      margin-right: 10%
+      .content-container
+        padding-left: 20%
+    .sidenav
+      width: 20%
+      opacity: 1
+
+
+@media only screen and (max-width: 768px)
+  body
+    .main
+      margin-right: 3%
+
+
+@media only screen and (max-width: 414px)
+  body
+    .sidenav-toggle
+      display: block
+
+    .sidenav
+      width: 100%
+      background-color: white
+      padding-top: 40px
+      padding-right: 5%
+      box-sizing: border-box
+      left: -82%
+      .sidenav-toggle
+        display: block
+        float: right
+        img
+          float: right
+      table
+        width: 80%
+
+    .main
+      margin-left: 5%
+      .content-container
+        h1
+          font-size: 19px
+        .projects-container
+          margin-top: 60px
+          .project
+            height: 170px

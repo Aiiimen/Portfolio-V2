@@ -53,6 +53,10 @@ body {
           color: inherit; }
         body .sidenav table td .active {
           text-decoration: underline !important; }
+    body .sidenav .sidenav-toggle {
+      display: none; }
+      body .sidenav .sidenav-toggle img {
+        transition: all 500ms ease-in-out; }
     body .sidenav .back-to-prof {
       display: flex;
       letter-spacing: 1px;
@@ -88,5 +92,48 @@ body {
         padding-top: 20px;
         text-decoration: underline;
         font-style: italic; }
+
+.rotate {
+  transform: rotate(540deg); }
+
+.open {
+  left: 0 !important; }
+
+@media only screen and (max-width: 1024px) {
+  body .main {
+    margin-right: 10%; }
+    body .main .content-container {
+      padding-left: 20%; }
+  body .sidenav {
+    width: 20%;
+    opacity: 1; } }
+@media only screen and (max-width: 768px) {
+  body .main {
+    margin-right: 3%; } }
+@media only screen and (max-width: 414px) {
+  body .sidenav-toggle {
+    display: block; }
+  body .sidenav {
+    width: 100%;
+    background-color: white;
+    padding-top: 40px;
+    padding-right: 5%;
+    box-sizing: border-box;
+    left: -82%; }
+    body .sidenav .sidenav-toggle {
+      display: block;
+      float: right; }
+      body .sidenav .sidenav-toggle img {
+        float: right; }
+    body .sidenav table {
+      width: 80%; }
+  body .main {
+    margin-left: 5%; }
+    body .main .content-container h1 {
+      font-size: 19px; }
+    body .main .content-container .projects-container {
+      margin-top: 60px; }
+      body .main .content-container .projects-container .project {
+        height: 170px; } }
 
 /*# sourceMappingURL=proj1.css.map */
