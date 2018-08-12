@@ -61,6 +61,8 @@ body {
           background-image: url("./project1/MHB_Main.jpg"); }
         body .main .content-container .projects-container .proj2 {
           background-image: url("./project2/barbora-main.jpg"); }
+        body .main .content-container .projects-container .proj3 {
+          background-image: url("./mathison/mathison.jpg"); }
 
 .rotate {
   transform: rotate(540deg); }

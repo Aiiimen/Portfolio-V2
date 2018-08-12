@@ -25,4 +25,36 @@ $(document).ready(function() {
    $('.sidenav').toggleClass('open');
  })
 
+
+
+ function myFunction() {
+   var winScroll =$(window).scrollTop();
+   var height = $(document).height();
+   var winHeight = $(window).height();
+   var scrolled = (winScroll /(height - winHeight)) * 100;
+   console.log(scrolled);
+   document.getElementById("myBar").style.width = scrolled + "%";
+ }
+// var pctScrolled;
+// //scroll indicator
+// function amountscrolled(){
+//     var winheight = $(window).height();
+//     //console.log("windowns Height: " + winheight);
+//     var docheight = $(document).height();
+//     //console.log("documents height: " + docheight);
+//     var scrollTop = $(window).scrollTop();
+//     //console.log("win scroll top: " + scrollTop);
+//     var trackLength = docheight - winheight;
+//     //console.log("trackLength: " + trackLength);
+//     pctScrolled = Math.floor(scrollTop/winheight * 100); // gets percentage scrolled (ie: 80 NaN if tracklength == 0)
+//     var sbHeight = window.innerHeight * (window.innerHeight / document.body.offsetHeight);
+//     console.log(pctScrolled + '% scrolled');
+//     document.getElementById("myBar").style.width = pctScrolled  + "%";
+// }
+//
+//
+$(window).on("scroll", function(){
+    myFunction();
+
+})
 })
