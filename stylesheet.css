@@ -62,6 +62,8 @@ body {
         body .main .content-container .projects-container .proj2 {
           background-image: url("./project2/barbora-main.jpg"); }
         body .main .content-container .projects-container .proj3 {
+          background-image: url("./project3/hero-mockups.jpg"); }
+        body .main .content-container .projects-container .proj4 {
           background-image: url("./mathison/mathison.jpg"); }
 
 .rotate {
