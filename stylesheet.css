@@ -33,9 +33,11 @@ body {
     height: 100%; }
     body .main .content-container {
       float: right;
-      padding-left: 30%; }
+      padding-left: 20%; }
       body .main .content-container h1 {
         padding-top: 55%; }
+      body .main .content-container #challenges-header {
+        padding-top: 20% !important; }
       body .main .content-container .projects-container {
         margin-top: 100px;
         margin-bottom: 100px; }

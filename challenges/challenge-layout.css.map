@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,qBAAE;EACA,aAAa,EAAE,IAAI;AACrB,qBAAE;EACA,MAAM,EAAE,aAAa",
+"sources": ["challenge-layout.sass"],
+"names": [],
+"file": "challenge-layout.css"
+}

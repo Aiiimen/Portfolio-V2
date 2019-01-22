@@ -38,7 +38,7 @@ $(document).ready(function() {
    var height = $(document).height();
    var winHeight = $(window).height();
    var scrolled = (winScroll /(height - winHeight)) * 100;
-   console.log(scrolled);
+   //console.log(scrolled);
    document.getElementById("myBar").style.width = scrolled + "%";
  }
 
