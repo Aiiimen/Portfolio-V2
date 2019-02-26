@@ -1,13 +1,17 @@
 <html style="height: 100%">
 
-<title>Sign Up Form</title>
+<title>Challenges | Sign Up Form</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!--    imports  -->
 <link rel="stylesheet" href="../proj1.css">
-<link ref="stylesheet" href="/challenges/challenge-layout.css">
+<link rel="stylesheet" href="/challenges/challenge-layout.css">
 <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
@@ -29,7 +33,8 @@
       <img src="../assets/sidenav-toggle.png" />
     </div>
 
-    <h4> Aimen Ben Aissa </h4>
+    <h4><a href="../index.html" style="text-decoration: none; color: inherit;"> Aimen Ben Aissa </a> </h4>
+    <h4 style="font-weight:400;line-height: 2"><span style="background-color: yellow; padding: 5px"> UI/UX Designer & </span><br><span style="background-color: yellow; padding: 5px"> Font-End Developer </span></h4>
     <table style="text-align: left; padding-top: 80px; padding-bottom: 50px;font-size: 14px;">
 
       <tr>
@@ -38,20 +43,27 @@
         </th>
       </tr>
       <tr>
+        <th><a class="nav-link " href="aboutpage.html">About Page Concept</a></th>
+      </tr>
+      <tr>
         <th><a class="nav-link " href="card.html">Card</a></th>
       </tr>
       <tr>
         <th><a class="nav-link " href="search.html">Search Input</a></th>
       </tr>
       <tr>
-        <th><a class="nav-link " href="signupform.html">Sign Up Form</a></th>
+        <th><a class="nav-link " href="popupwindow.html">Pop Up Window</a></th>
       </tr>
 
     </table>
 
     <div class="back-to-prof">
       <div><img src="../assets/back-icon.png"></div>
-      <div><a href="../index.html">BACK TO PROJECTS</a></div>
+      <div><a href="../challenges.html">BACK TO CHALLENGES</a></div>
+    </div>
+    <div class="back-to-prof">
+      <div><img src="../assets/back-icon.png"></div>
+      <div><a href="../index.html">MY PROJECTS</a></div>
     </div>
 
     <div class="social-media">
@@ -66,19 +78,119 @@
   <div class="main">
     <div class="content-container">
 
-      <h1> Sign Up Form </h1>
+      <div class="challenge-brief">
+        <h1> Sign Up Form </h1>
+        <div class="challenge-subtitle">
+          <div class="subtitle-stroke" style="background-color: #37A2FF"></div>
+          <div class="subtitle-text">
+            <p><i>a sign up form with animation depending on the outcome. Successful sign in or failure.</i></p>
+          </div>
+        </div>
+
+        <div class="challenge-source">
+          <div class="challenge-source-code btn" style="background-color: #37A2FF">
+            <a target="_blank" href="https://github.com/AimenBenAissa/Signupform/tree/master/sign%20up%20form/Code">Source Code</a>
+          </div>
+          <div class="challenge-live-demo btn" style="background-color: #37A2FF">
+            <a target="_blank" href="https://codepen.io/Benfika24/full/RvvNLp">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="challenge-pictures">
+        <img src="/challenges/assets/signupform/signupform.gif"/>
+
+      </div>
+
+      <div class="challenge-description">
+        <p>There’s a lot of sign up forms out there on the internet with different designs and animation when it comes to user feedback. With the help of jQuery for the animation I’ve managed to create a minimalist sign up form with two animations to feed back the user.</p>
+      </div>
+
       <hr>
-      <p> A sign-up form with animation depending on the outcome. Successful sign in or failure. </p>
+      <div class="challenge-links">
+
+        <div class="challenge-typefaces">
+          <p>Typefaces: <span style="font-family: 'Poppins'"> Poppins </span>, <span style="font-family: 'Roboto'">Roboto</span> </p>
+        </div>
+
+        <div class="challenge-colours">
+          <p> Colours:
+          <span style="background-color: #37A2FF; padding: 3px 5px 3px 5px">#37A2FF</span>
+          <span style="background-color: #13CE66; padding: 3px 5px 3px 5px">#13CE66</span>
+          <span style="background-color: #FF4949; padding: 3px 5px 3px 5px">#FF4949</span>
+         </p>
+
+        </div>
+
+        <div class="challenge-illustrations">
+          <p> Icons: <a target="_blank" href="https://www.iconfinder.com/">Iconfinder</a> </p>
+        </div>
+
+      </div>
       <hr>
 
-      <div class="challenge-links">
-        <div class="demo-btn">Demo </div>
-        <div class="sc-btn">Source Code </div>
+      <div class="challenge-content">
+        <h2> The HTML Structure </h2>
+
+        <div class="challenge-text">
+          <p>the HTML for the sign-up form is simple. All the elements for the form are contained in a main wrapper <code>.main-container</code>. The form is contained inside <code>.sign-in-container</code> where Labels and inputs and the button live. The successful & failure elements live in their own container inside <code>.main-container</code>.</p>
+        </div>
+
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/6eec3c8539cd7f8ca47ed24a7469b72e.js"></script>
+        </div>
+
+
+        <h2> Styling </h2>
+        <div class="challenge-text">
+          <p>The successful & failure container share the same class <code>.message-container</code> where the <samp>position</samp> is set to <samp>absolute</samp> and <samp>100%</samp> to the <samp>top</samp> attribute to push it down from the container. In order to hide it <samp>overflow: hidden</samp> was set to <code>.main-container</code> so any elements that <samp>overflow</samp> are <samp>hidden</samp>.</p>
+        </div>
+
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/def417cdd768b28feace11d2ef7152ce.js"></script>
+        </div>
+
+        <h2> Event Handling </h2>
+        <div class="challenge-text">
+          <p>In order to show both screens - a simple <samp>if</samp> statement is used to determine what animation to run. Of course this is not ideal - normally upon submission the input values need to be checked against a databse to validate the date.</p>
+        </div>
+
+        <div class="challenge-code">
+
+          <script src="https://gist.github.com/AimenBenAissa/4766a5c8f5ad09aa3e88399d08c75fb6.js"></script>
+
+        </div>
+
+        <h2> Upon Success</h2>
+        <div class="challenge-text">
+          <p>If the <samp>username<samp> and <samp>password<samp> values aren’t an empty string then the successful screen will animate up by using the <samp>animate</samp> provided by jQuery.
+          The <samp>top</samp> is set from <samp>100%</samp> to <samp>5%</samp> in <samp>400ms</samp>. When that function finished executing – the content of successful screen is then faded in to create a sequence of animations.</p>
+        </div>
+
+        <div class="challenge-code">
+
+          <script src="https://gist.github.com/AimenBenAissa/3fa04790c76cf338868677acf9dcd07e.js"></script>
+
+        </div>
+
+        <h2> Upon Failure</h2>
+        <div class="challenge-text">
+          <p>The same code is used for the failure screen.</p>
+        </div>
+
+        <div class="challenge-code">
+
+          <script src="https://gist.github.com/AimenBenAissa/b22feb566f0b32d8cf764467dea496d5.js"></script>
+
+        </div>
       </div>
 
 
       <!-- FOOTER - navigation to other projects -->
+
       <div class="footer">
+
         <a class="prev" href="search.html">
           <div>
             <p> Previous Challenge </p>
@@ -86,10 +198,10 @@
           </div>
         </a>
 
-        <a class="next" href="card.html">
+        <a class="next" href="popupwindow.html">
           <div>
             <p> next Challenge </p>
-            <h3>On Card Hover</h3>
+            <h3>Pop up Window</h3>
           </div>
         </a>
       </div>

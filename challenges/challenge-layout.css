@@ -1,6 +1,86 @@
-.content-container h1 {
-  margin-bottom: 90px; }
-.content-container hr {
-  margin: 20px 0 20px 0; }
+h2 {
+  margin-top: 0px !important; }
+
+code {
+  font-size: 16px;
+  background-color: #f6f8fa; }
+
+xmp {
+  background-color: #f6f8fa; }
+
+samp {
+  font-size: 16px; }
+
+.challenge-subtitle {
+  display: flex; }
+  .challenge-subtitle .subtitle-stroke {
+    margin-right: 10px;
+    width: 5px;
+    background-color: #121738; }
+
+.challenge-links .challenge-illustrations a {
+  color: #0070E0;
+  text-decoration: none; }
+
+.challenge-source {
+  margin-top: 50px;
+  display: flex; }
+  .challenge-source .btn {
+    padding: 20px 30px 20px 30px;
+    background-color: #121738;
+    margin-right: 50px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: 600; }
+    .challenge-source .btn:hover {
+      transform: translateY(-3px); }
+    .challenge-source .btn a {
+      color: white;
+      text-decoration: none; }
+
+.challenge-pictures {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .challenge-pictures img {
+    max-width: 100%; }
+
+.gist-meta {
+  display: none !important; }
+
+@media only screen and (max-width: 768px) {
+  .challenge-pictures {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .challenge-pictures img {
+      max-width: 100%; }
+
+  .challenge-links .challenge-colours span {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+
+  .challenge-source {
+    display: block;
+    text-align: center; }
+    .challenge-source .challenge-source-code {
+      margin-bottom: 20px; } }
+@media only screen and (max-width: 414px) {
+  .challenge-pictures {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .challenge-pictures img {
+      max-width: 100%; }
+
+  .challenge-links .challenge-colours span {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px; }
+
+  .challenge-source {
+    display: block;
+    text-align: center; }
+    .challenge-source .challenge-source-code {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=challenge-layout.css.map */

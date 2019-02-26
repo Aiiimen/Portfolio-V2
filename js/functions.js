@@ -31,6 +31,13 @@ $(document).ready(function() {
    return false;
  })
 
+//on challenge click -
+$('.challenge-details').click(function(){
+  window.location = $(this).find("a").attr("href");
+  return false;
+})
+
+
 
 
  function myFunction() {

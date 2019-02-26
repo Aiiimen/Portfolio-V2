@@ -82,6 +82,9 @@ body {
       padding-top: 15%; }
       body .main .content-container .cs-img img {
         max-width: 100%; }
+      body .main .content-container .cs-img video{
+        max-width: 100%;
+      }
       body .main .content-container .cs-img .caption {
         font-size: 10px;
         color: #ccc;

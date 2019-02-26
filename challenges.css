@@ -1,14 +1,16 @@
 .challenges-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 60px !important; }
   .challenges-container .challenge-holder {
     width: 48%;
     height: 300px;
     margin-bottom: 30px;
     cursor: pointer;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-sizing: border-box; }
     .challenges-container .challenge-holder:hover {
       background-image: url(); }
@@ -21,14 +23,14 @@
       flex-direction: column;
       align-items: center;
       display: none; }
+  .challenges-container .otherchallenge-holder {
+    margin-bottom: 30px; }
   .challenges-container .challenge1 {
-    background-image: url("./challenges/assets/card.png"); }
+    background-image: url("./challenges/assets/design.JPG"); }
   .challenges-container .challenge2 {
-    background-image: url("./challenges/assets/search.png"); }
+    background-image: url("./challenges/assets/card.JPG"); }
   .challenges-container .challenge3 {
-    background-image: url("./challenges/assets/form.png"); }
-  .challenges-container .challenge4 {
-    background-image: url("./challenges/assets/popupwindow.png"); }
+    background-image: url("./challenges/assets/searchfilter.JPG"); }
 
 @media only screen and (max-width: 768px) {
   .challenges-container {

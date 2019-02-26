@@ -1,0 +1,243 @@
+<html style="height: 100%">
+
+<title>Challenges | About Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!--    imports  -->
+<link rel="stylesheet" href="../proj1.css">
+<link rel="stylesheet" href="/challenges/challenge-layout.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+<script src="../js/functions.js"></script>
+
+
+
+<body>
+
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+  <!-- Side navigation -->
+  <div class="sidenav">
+    <div class="sidenav-toggle">
+      <img src="../assets/sidenav-toggle.png" />
+    </div>
+
+    <h4><a href="index.html" style="text-decoration: none; color: inherit;"> Aimen Ben Aissa </a> </h4>
+    <h4 style="font-weight:400;line-height: 2"><span style="background-color: yellow; padding: 5px"> UI/UX Designer & </span><br><span style="background-color: yellow; padding: 5px"> Font-End Developer </span></h4>
+    <table style="text-align: left; padding-top: 80px; padding-bottom: 50px;font-size: 14px;">
+
+      <tr>
+        <th>
+          <h5>Challenges</h5>
+        </th>
+      </tr>
+      <tr>
+        <th><a class="nav-link " href="card.html">Card</a></th>
+      </tr>
+      <tr>
+        <th><a class="nav-link " href="search.html">Search Input</a></th>
+      </tr>
+      <tr>
+        <th><a class="nav-link " href="signupform.html">Sign Up Form</a></th>
+      </tr>
+      <tr>
+        <th><a class="nav-link " href="popupwindow.html">Pop Up Window</a></th>
+      </tr>
+
+    </table>
+
+    <div class="back-to-prof">
+      <div><img src="../assets/back-icon.png"></div>
+      <div><a href="../challenges.html">BACK TO CHALLENGES</a></div>
+    </div>
+    <div class="back-to-prof">
+      <div><img src="../assets/back-icon.png"></div>
+      <div><a href="../index.html">MY PROJECTS</a></div>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/benfiika/" target="_blank"><img style="width: 33px" src="../assets/insta-icon.png" /></a>
+      <a href="https://codepen.io/Benfika24/" target="_blank"><img src="../assets/codepen-icon.png" /></a>
+      <a href="https://github.com/AimenBenAissa/" target="_blank"><img src="../assets/github-logo.png" /></a>
+    </div>
+
+  </div>
+
+  <!-- Page content -->
+  <div class="main">
+    <div class="content-container">
+
+      <div class="challenge-brief">
+        <h1> About Page Concept </h1>
+        <div class="challenge-subtitle">
+          <div class="subtitle-stroke" style="background-color: #0033FF"></div>
+          <div class="subtitle-text">
+            <p><i>About page concept with multiple hover transitions & animations.</i></p>
+          </div>
+        </div>
+
+        <div class="challenge-source">
+          <div class="challenge-source-code btn" style="background-color: #0033FF">
+            <a target="_blank" href="https://github.com/AimenBenAissa/aboutpage/tree/master/Code">Source Code</a>
+          </div>
+          <!-- <div class="challenge-live-demo btn">
+            <a target="_blank" href=".">Live Demo</a>
+          </div> -->
+        </div>
+
+      </div>
+
+      <div class="challenge-pictures">
+        <img src="/challenges/assets/aboutpage/aboutpage.gif" />
+      </div>
+
+
+      <hr>
+      <div class="challenge-links">
+
+        <div class="challenge-typefaces">
+          <p>Typefaces: <span style="font-family: 'Manrope'"> Manrope </span> </p>
+        </div>
+
+        <div class="challenge-colours">
+          <p> Colours:
+            <span style="background-color: #0033FF; padding: 3px 5px 3px 5px">#0033FF</span>
+            <span style="background-color: #000; padding: 3px 5px 3px 5px">#000000</span>
+          </p>
+
+        </div>
+
+        <div class="challenge-illustrations">
+          <p> Icons: <a target="_blank" href="https://www.iconfinder.com/">Iconfinder</a> </p>
+        </div>
+
+      </div>
+      <hr>
+
+      <div class="challenge-content">
+        <h2> The HTML Structure </h2>
+
+        <div class="challenge-text">
+          <p>The whole content is wrapped in a <samp> p </samp>tag – for the elements that contain hover stats they’re wrapped in a <samp> span </samp> tag. The <samp>span</samp> tag is used to group inline-elements. It is used to add a hook to a
+            part of a text or a part of a document. </p>
+        </div>
+
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/5b6f6b0d76d6fb7a4ca449dba19aa64f.js"></script>
+        </div>
+
+
+        <h2> Styling </h2>
+        <div class="challenge-text">
+          <p>all <samp> span </samp> tags are set to have their <samp>position</samp> <samp> relative </samp> therefore all the children can be set to <samp>absolute</samp> to freely move them around if need be. The absolute element is positioned
+            relative to its first positioned (not static) ancestor element. </p>
+        </div>
+
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/11b641e0500db743f96fb45a87c0cac9.js"></script>
+        </div>
+
+        <h2> Hover & Animations </h2>
+        <div class="challenge-text">
+          <p>Below I’ll be explaining how I achieved 3 of the animations and transitions that were used. There’re many other ways to achieve the same thing – these are one of those ways. </p>
+        </div>
+
+        <h2> CSS Gradient Animation </h2>
+        <div class="challenge-text">
+          <p>When the mouse is hovered on Designer text an <samp>animation</samp> called <samp>Gradient</samp> is triggered. </p>
+          <p>This animation is a combination of 5 different <samp>keyframes</samp> where it transitions <samp>infinitely</samp> between 4 different colours with <samp>ease-in-out</samp> over <samp>5 seconds</samp>. </p>
+          <p>Notice the <samp>colour</samp> at <samp>0%</samp> and <samp>100%</samp> are the same – this is to create a smooth transition when the animation is looped. If the colours were different, you’ll notice a sudden abrupt in colour
+            transitioning</p>
+        </div>
+        <div class="challenge-pictures">
+          <img src="/challenges/assets/aboutpage/designer.gif" />
+        </div>
+        <div class="challenge-code">
+
+          <script src="https://gist.github.com/AimenBenAissa/e24215e57ab83c8bcd0a33abde1c5683.js"></script>
+
+        </div>
+        <div class="challenge-code">
+
+          <script src="https://gist.github.com/AimenBenAissa/f22f26be1090fed5c31122caa041f6b8.js"></script>
+
+        </div>
+
+        <h2> CSS 360deg Rotate Animation </h2>
+        <div class="challenge-text">
+          <p>When the @ sign is on a hover state, an email address <samp>rotates</samp> around it. This is achieved like the previous animation using keyframes but the <samp>transform</samp> attribute was used. Note the <samp>transition</samp> used here is <samp>linear</samp> where it seems like one continues loop. For example if the <samp>timing function </samp> was ease you would notice when the animation starts and ends. </p>
+        </div>
+        <div class="challenge-pictures">
+          <img src="/challenges/assets/aboutpage/email.gif" />
+        </div>
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/e61b416d1289f1349124f1b3468cc44b.js"></script>
+        </div>
+        <div class="challenge-code">
+          <script src="https://gist.github.com/AimenBenAissa/e5b900572ef62b75effcf512c1043f83.js"></script>
+        </div>
+      </div>
+
+      <h2> CSS Floating Animation </h2>
+      <div class="challenge-text">
+        <p> The floating animation was achieved by having 3 images that were modified in <samp> Width & Height</samp> and <samp>position</samp> in CSS. This was achieved by placing all the <samp>img</samp> tags inside a container that positioned <samp>relative</samp>. By setting the <samp>img</samp> to an <samp>absolute</samp> position, it gives you the flexibility to move them around easily.  </p>
+        <p>All the images have the same <samp>animation</samp> called <samp>hearts</samp> where the <samp>opacity</samp> gradually gets set to <samp>1</samp> and back to <samp>0</samp> when it reaches 100%. The movement was achieved by incrementing the <samp>bottom</samp> value. To make the animation more realistic different delays were applied to individual <samp>img</samp> tags.</p>
+      </div>
+      <div class="challenge-pictures">
+        <img src="/challenges/assets/aboutpage/hearts.gif" />
+      </div>
+      <div class="challenge-code">
+        <script src="https://gist.github.com/AimenBenAissa/d43bdc9d7936ee1add33bf661c65f584.js"></script>
+      </div>
+      <div class="challenge-code">
+        <script src="https://gist.github.com/AimenBenAissa/12874ec01a81e3f01d35cb6c5e40eb0a.js"></script>
+      </div>
+
+
+
+      <!-- FOOTER - navigation to other projects -->
+      <div class="footer">
+        <a class="prev" href="popupwindow.html">
+          <div>
+            <p> Previous Challenge </p>
+            <h3> Pop Up Window </h3>
+          </div>
+        </a>
+
+        <a class="next" href="card.html">
+          <div>
+            <p> next Challenge </p>
+            <h3>Card</h3>
+          </div>
+        </a>
+      </div>
+
+    </div>
+</div>
+
+
+  <script>
+    // // When the user scrolls the page, execute myFunction
+    // window.onscroll = function() {
+    //   myFunction()
+    // };
+    //
+    // function myFunction() {
+    //   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    //   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    //   var scrolled = (winScroll / height) * 100;
+    //   document.getElementById("myBar").style.width = scrolled + "%";
+    // }
+  </script>
+</body>
+
+
+</html>

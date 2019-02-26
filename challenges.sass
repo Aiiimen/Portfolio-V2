@@ -2,13 +2,15 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  margin-bottom: 60px !important
   .challenge-holder
     width: 48%
     height: 300px
     margin-bottom: 30px
     cursor: pointer
     background-position: center
-    background-size: contain
+    background-size: cover
+    background-repeat: no-repeat
     box-sizing: border-box
 
     &:hover
@@ -23,14 +25,16 @@
       flex-direction: column
       align-items: center
       display: none
+  .otherchallenge-holder
+    margin-bottom: 30px
+
   .challenge1
-    background-image: url("./challenges/assets/card.png")
+    background-image: url("./challenges/assets/design.JPG")
   .challenge2
-    background-image: url("./challenges/assets/search.png")
+    background-image: url("./challenges/assets/card.JPG")
   .challenge3
-    background-image: url("./challenges/assets/form.png")
-  .challenge4
-    background-image: url("./challenges/assets/popupwindow.png")
+    background-image: url("./challenges/assets/searchfilter.JPG")
+
 
 
 
