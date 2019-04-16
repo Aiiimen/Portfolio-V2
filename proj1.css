@@ -184,7 +184,7 @@ body .main .content-container .footer .next div p {
     margin-right: 3%;
   }
 }
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 500px) {
   body .sidenav-toggle {
     display: block;
   }
